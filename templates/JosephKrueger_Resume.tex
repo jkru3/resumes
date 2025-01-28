@@ -1,0 +1,334 @@
+% Defines the document type as an article with a font size of 11pt and letter paper size
+\documentclass[11pt,letterpaper]{article}
+
+% Allows control over line spacing.
+\usepackage{setspace}
+\setstretch{1.08}
+% Adjusts page dimensions and margins. TODO: margins?
+\usepackage[scale=0.9]{geometry}
+% Defines a new column type X for tables that stretches to fill the available space
+\usepackage{tabularx}
+
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault} % Set sans-serif as default
+% % Verdana alt
+% \usepackage{fira}
+% \renewcommand\familydefault{\sfdefault}
+% % Tahoma alt
+% \usepackage{cm-super}
+% \renewcommand\familydefault{\sfdefault}
+
+% Provides better formatting for URLs.
+\usepackage{url}
+% Customizes list environments
+\usepackage{enumitem}
+% Customizes section headings. To format section titles with small caps and a rule below
+\usepackage{titlesec}				
+
+% Enables color support for text and graphics.
+\usepackage{xcolor}
+\definecolor{googleblue}{HTML}{4285F4}   % Google Blue
+\definecolor{googlered}{HTML}{DB4437}    % Google Red
+\definecolor{googleyellow}{HTML}{F4B400} % Google Yellow
+\definecolor{googlegreen}{HTML}{0F9D58}  % Google Green
+
+% Adds hyperlinks and defines their appearance
+\usepackage[unicode, draft=false]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+% Provides access to FontAwesome icons. For social icons
+\usepackage{fontawesome5}
+
+%----------------------------------------------------------------------------------------
+%	BEGIN DOCUMENT
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+% TODO: is this being used?
+% improves spacing
+\setlength{\parskip}{0.3em}
+% non-numbered pages
+\pagestyle{empty} 
+
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{Joseph L. Krueger} \\[7.5pt]
+\href{https://jkru3.github.io/personal-website/}{\raisebox{-0.05\height}\faGlobe\ Website} \ $|$ \ 
+\href{https://linkedin.com/in/jkru3}{\raisebox{-0.05\height}\faLinkedin\ linkedin.com/in/jkru3} \ $|$ \ 
+%\href{https://mysite.com}{\raisebox{-0.05\height}\faGlobe \ mysite.com} \ $|$ \ 
+\href{mailto:jkru3@cs.washington.edu}{\raisebox{-0.05\height}\faEnvelope \ jkru3@cs.washington.edu} \ $|$ \ 
+\href{tel:360-763-3490}{\raisebox{-0.05\height}\faMobile \ 360-763-3490} \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+
+\begin{tabularx}{\textwidth}{lX}
+    \textbf{Computer Science (B.S.) \& Business} & \hfill 
+    \textbf{Graduating Dec 2024} \\[0pt]
+    \small
+    University of Washington - Paul G. Allen School of Computer Science & \hfill Seattle, WA \\
+\end{tabularx}
+\begin{itemize}
+    \small
+    \item NLP, Distributed Systems, Systems Programming, Computer Security,  Statistics, Discrete Math, Data Structures, Data Management (SQL and NoSQL), Data Visualization, Management, Accounting, Information Systems
+    \item President and Co-founder of Clearvote, Salsa Club, UW Farm, Algorithmic Trading Club, 3.69 GPA
+\end{itemize}
+
+\begin{tabularx}{\textwidth}{lX}
+    \textbf{A.A.S. Transfer Degree} & \hfill \textbf{Jan -- Aug 2022} \\[0pt]
+    \small Whatcom Community College & \hfill Bellingham, WA \\
+\end{tabularx}
+\begin{itemize}
+    \small
+    \item Programming Club
+\end{itemize}
+
+\begin{tabularx}{\textwidth}{lX}
+    \textbf{A.A. Liberal Arts} & \hfill \textbf{Aug 2015 -- Jun 2016} \\[0pt]
+    \small North Hennepin Community College & \hfill Brooklyn Park, MN \\
+\end{tabularx}
+%\begin{itemize}
+%   \small 
+%   \item[--] Honors: Phi Theta Kappa
+%\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS
+%----------------------------------------------------------------------------------------
+
+\section{Projects}
+
+\begin{tabularx}{\textwidth}{lX}
+    \textbf{Founder} & \hfill \textbf{Jul 2022 -- Current} \\[0pt]
+    \small Clearvote & \hfill \href{https://github.com/jkru3/ClearVote}{clearvote.info} \\
+\end{tabularx}
+\begin{itemize}
+    \small Leading weekly stand-up meetings, security, company branding, and communications for a student run startup and non-profit. Developed a state-wide scalable web scraper with Puppeteer that feeds political statements into ChatGPT for sentiment analysis, adding metrics to a relational database through MySQL. Deployed an MVP with a Flask back-end on an EC2 instance with AWS.
+\end{itemize}
+
+\begin{tabularx}{\textwidth}{lX}
+    \textbf{DubHacks Hackathon} & \hfill \textbf{Oct 2022} \\[0pt]
+    \small illustrAItor & \hfill \href{https://devpost.com/software/illustraitor}{devpost.com/software/illustraitor} \\
+\end{tabularx}
+\begin{itemize}
+    \small Implemented a Python app that makes picture books out of novels with AI generated images. Ranked one of the 9 winning teams out of 455 participants and presented to a panel of six judges at a national collegiate hackathon.
+\end{itemize}
+
+\begin{tabularx}{\textwidth}{lX}
+    \textbf{React Application} & \hfill \textbf{Jul 2022 to Current} \\[0pt]
+    \small ClearVote & \hfill \href{https://github.com/jkru3/clear-vote/}{https://github.com/orgs/clear-vote/repositories} \\
+\end{tabularx}
+\begin{itemize}
+    \small
+    \item[--] A React.js app intended to utilize an API fetch to retrieve information on local election candidates
+    \item[--] Users take a short survey on about 20 political values and then are shown where candidates stand in relation
+    \item[--] Designed with the intent of creating as few pain points as possible through a simple, two-page interface
+\end{itemize}
+
+\begin{tabularx}{\textwidth}{lX}
+    \textbf{Youtube channel} & \hfill \textbf{July 2021 to Current} \\[0pt]
+    \small The Radical Normal & \hfill \href{https://www.youtube.com/channel/UC3hpUs48maO17MxozoTlX_Q}{youtu.be/JL9NPzYKlw8} \\[0pt]
+\end{tabularx}
+\begin{itemize}
+    \small
+    \item[--] Long-essay format videos discussing creative solutions to modern issues
+\end{itemize}
+
+\begin{tabularx}{\textwidth}{lX}
+    \textbf{Musical Album} & \hfill \textbf{September 2020 to July 2021} \\[0pt]
+    \small
+    everything always works out in the end & \hfill \href{https://open.spotify.com/artist/3Tav1kg6iqGUSSZtpPD69X?si=gvkz7dPpTtKBffDOujQkeA}{Spotify}, \href{https://music.apple.com/us/artist/joey-laurent/1562180121}{Apple Music} \\
+\end{tabularx}
+\begin{itemize}
+    \small
+    \item[--] Analyzed over 2000 compositions to create a songwriting standard as a guideline for a creative direction
+    \item[--] Composed, recorded, mixed, and released a 7-track album independently
+    \item[--] Played guitar, piano, bass, and percussive elements in addition to various digital editing and FX usages 
+\end{itemize}
+
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+\section{Skills}
+\begin{tabularx}{\textwidth}{lX}
+\normalsize \textbf{Technical Skills:} & \small Java 8, JavaScript ES6, HTML, CSS, Bootstrap 5, React.js, C, Vim, Figma, Adobe Creative Suite, Canva, UX design, Git, GitHub, Gitlab, Ubuntu Linux, Bash Shell, LaTeX.\\
+\normalsize \textbf{Other Skills:} & \small Social media marketing, Music and Audio production with Logic Pro X and Ableton Live 11, Video production with Final Cut Pro, VFX and animation with Adobe After Effects, Public speaking, Weed control, Gardening, Fencing, Carpentry, Painting, Personal Protective Equipment and Safety standards, Experience providing emergency care (Lifeguard rescue and First aid), Able to consistently lift over 50lbs, B1 Spanish Proficiency. \\ 
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+% EXPERIENCE SECTIONS
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+\begin{tabularx}{\textwidth}{lX}
+    \textbf{Community Volunteer} & \hfill \textbf{September 2022 to Current} \\[0pt]
+    \small
+    UW Farm & \hfill Seattle, WA \\[0pt]
+\end{tabularx}
+
+\begin{itemize}
+    \small
+    \item[$\cdot$] Led volunteer efforts in agricultural activities including weeding, planting, harvesting, watering, and pest control.
+    \item[$\cdot$] Cultivated 54 crop varieties sold to the UW dining halls and through a Community Supported Agriculture program.
+    \item[$\cdot$] Collaborated with leadership to foster engagement in weekend volunteer initiatives, driving community involvement.
+\end{itemize}
+
+\begin{tabularx}{\textwidth}{lX}
+    \textbf{Software Engineering Intern} & \hfill \textbf{Jun 2023 -- Sep 2023} \\[0pt]
+    \small
+    MCG Health & \hfill Seattle, WA \\[0pt]
+\end{tabularx}
+\begin{itemize}
+    \small Migrated from a deprecated version of Angular to work with a .NET Core back-end for an app used by 2,800 hospitals in product demos. Added auto-completion and code lookup support for 70,000 medical care guideline codes. Set up a continuous integration and deployment pipeline in Azure. Employed agile project management principles in cross-team sprint planning sessions during scrum meetings with Jira and Confluence.
+\end{itemize}
+
+\begin{tabularx}{\textwidth}{lX}
+    \textbf{Computer Science Teaching Assistant} & \hfill \textbf{January to June 2023} \\[0pt]
+    \small
+    CSE 122, 351; The University of Washington & \hfill Seattle, WA \\[0pt]
+\end{tabularx}
+\begin{itemize}
+    \small Led bi-weekly instructional quiz sessions and wrote exam questions for a new introductory computer science course. Held office hours and individual tutoring for an upper-level systems programming class, adapting subsequent lessons to address challenging topics. Drafted grading policy for homework, midterms, quizzes, and exams.
+\end{itemize}
+
+\begin{tabularx}{\textwidth}{lX}
+    \textbf{Student Life Leader} & \hfill \textbf{June 2022 to September 2022} \\[0pt]
+    \small
+    Whatcom Community College & \hfill Bellingham, WA \\[0pt]
+\end{tabularx}
+\begin{itemize}
+    \small
+    \item[--] Employed while enrolled part-time in summer classes
+    \item[--] Wrote excel scripts that helped track over 800 pounds of donations to the WCC food pantry
+    \item[--] Created colorful designs for flyers using Figma and issued them around campus to promote Student Life events
+\end{itemize}
+
+\begin{tabularx}{\textwidth}{lX}
+    \textbf{Restaurant Service Industry} & \hfill \textbf{September 2017 to January 2022} \\[0pt]
+    \small
+    Benihana (Santa Monica, CA), others & \hfill Various Locations \\[0pt]
+\end{tabularx}
+\begin{itemize}
+    \small
+    \item[$\cdot$] Worked in front-of-house in various roles, enhancing guest experience and boosting operational efficiency.
+    \item[$\cdot$] Led bar and menu revisions in a high-volume restaurant, handling over \$15,000 in nightly sales.
+    \item[$\cdot$] Built long-lasting relationships with customers and addressed operational inefficiencies to elevate service standards.
+\end{itemize}
+
+\begin{tabularx}{\textwidth}{lX}
+    \textbf{Server/Bartend} & \hfill \textbf{August 2021 to March 2022} \\[0pt]
+    \small K-pop Korean Fried Chicken & \hfill Bellingham, WA  \\[0pt]
+\end{tabularx}
+\begin{itemize}
+    \small
+    \item[--] 
+\end{itemize}
+
+\begin{tabularx}{\textwidth}{lX}
+    \textbf{Farmhand} & \hfill \textbf{June 2022 to September 2022} \\[3.75pt]
+    Bobbi’s Farm & \hfill Bellingham, WA \\[3.75pt]
+\end{tabularx}
+\begin{itemize}
+    \item[--] Independently removed weeds, sorted for either compost or disposal
+    \item[--] Added fence posts, cleaned solar panels, painted, and mulched saplings
+    \item[--] Pruned back trees and bushes and laid weed barriers around tenant properties
+\end{itemize}
+
+\begin{tabularx}{\textwidth}{lX}
+    \textbf{Mill Work} & \hfill \textbf{October 2021 to November 2021} \\[3.75pt]
+    Silva Star Lumber Mill & \hfill Bellingham, WA  \\[3.75pt]
+\end{tabularx}
+\begin{itemize}
+    \item[--] Worked outdoors with a small team to deliver orders of lumber cut to a specific length 
+    \item[--] Sanded and Pulled lumber into carts for shipment
+    \item[--] Diligently alerted team members of hazards and upheld safety protocols
+\end{itemize}
+
+\begin{tabularx}{\textwidth}{lX}
+    \textbf{Bartender} & \hfill \textbf{2019 to April 2020} \\[3.75pt]
+    B-Town Bar and Grill & \hfill Bellingham, WA \\[3.75pt]
+\end{tabularx}
+
+\begin{tabularx}{\textwidth}{lX}
+    \textbf{Bartender} & \hfill \textbf{2019 to 2019} \\[3.75pt]
+    The Well & \hfill Los Angeles, CA \\[3.75pt]
+\end{tabularx}
+
+\begin{tabularx}{\textwidth}{lX}
+    \textbf{Server/Bartend} & \hfill \textbf{May 2016 to March 2018} \\
+    Benihana & \hfill Minneapolis, MN; Santa Monica, CA\\
+\end{tabularx}
+\begin{itemize}
+    \item[--] 
+\end{itemize}
+
+\begin{tabularx}{\textwidth}{lX}
+    \textbf{Produce Department} & \hfill \textbf{September 2015 to May 2016} \\[3.75pt]
+    Target & \hfill Roseville, MN \\[3.75pt]
+\end{tabularx}
+\begin{itemize}
+    \item[--] Took daily inventory and rotated various produce products in a refrigerated environment 
+    \item[--] Identified produce that was fit for sale and culled produce that was no longer fresh 
+    \item[--] Worked continuously during busy hours to keep the market stocked 
+\end{itemize}
+
+\begin{tabularx}{\textwidth}{lX}
+    \textbf{Server} & \hfill \textbf{2015 to 2015} \\[3.75pt]
+    Minneapolis Golf Club & \hfill Minneapolis, MN \\[3.75pt]
+\end{tabularx}
+
+\begin{tabularx}{\textwidth}{lX}
+    \textbf{Delivery Driver} & \hfill \textbf{20—} \\[3.75pt]
+    Jimmy John's & \hfill Maple Grove, MN \\[3.75pt]
+\end{tabularx}
+
+\begin{tabularx}{\textwidth}{lX}
+    \textbf{Server} & \hfill \textbf{20—} \\[3.75pt]
+    El Bamba Mexican Restaurant & \hfill Spring Lake Park, MN \\[3.75pt]
+\end{tabularx}
+
+\begin{tabularx}{\textwidth}{lX}
+    \textbf{Guitar Instructor} & \hfill \textbf{2014 to 2016} \\[3.75pt]
+    Maple Grove Community Center & \hfill Maple Grove, MN \\[3.75pt]
+\end{tabularx}
+
+\begin{tabularx}{\textwidth}{lX}
+    \textbf{Lifeguard} & \hfill \textbf{2012 to 2016} \\[3.75pt]
+    Maple Grove Community Center & \hfill Maple Grove, MN \\[3.75pt]
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+% Volunteer SECTIONS
+%----------------------------------------------------------------------------------------
+
+\section{Volunteer Work}
+
+\begin{tabularx}{\textwidth}{lX}
+    \textbf{Programming Club} & \hfill \textbf{February 2022 to July 2022} \\[3.75pt]
+    Whatcom Community College & \hfill Bellingham, WA \\[3.75pt]
+\end{tabularx}
+\begin{itemize}
+    \item[--] Discussed personal projects and current tech-related events
+    \item[--] Made friends with students outside of class who share a similar interest in software development and engineering
+    \item[--] Learned how to utilize GitHub to collaborate remotely with other club members
+\end{itemize}
+
+\begin{tabularx}{\textwidth}{lX}
+    \textbf{Community Garden Volunteer} & \hfill \textbf{November 2021 to September 2022} \\[3.75pt]
+    Chuckanut Center & \hfill Fairhaven, WA \\[3.75pt]
+\end{tabularx}
+\begin{itemize}
+    \item[--] Helped with weeding, composting, planting, and harvesting
+    \item[--] Shared ideas about gardening, self-sufficiency, and environmentalist concerns with community members
+    \item[--] Introduced new volunteers and helped to foster a fun learning environment for everyone
+\end{itemize}
+
+\end{document}

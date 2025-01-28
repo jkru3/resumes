@@ -15,3 +15,9 @@ LaTeX workshop
 Create resume templates and then save them. With LaTeX workshop, they are automatically compiled into PDFs
 
 Deploying this through GitHub pages will allow you to refer to any of the PDFs in the ./build directory as a link, so anyone you want to share a tailored resume with can see it!
+
+# Resume tips:
+Follow the form
+1. Accomplished X
+2. Measured by Y
+3. By doing Z

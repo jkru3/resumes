@@ -1,100 +1,100 @@
-% \documentclass[11pt,letterpaper]{article}
+\documentclass[11pt,letterpaper]{article}
 
-% % Required packages
-% \usepackage[empty]{fullpage}
-% \usepackage{hyperref}
-% \usepackage{fontawesome5}
-% \usepackage{latexsym}
-% \usepackage[sfdefault]{carlito}
-% \usepackage[T1]{fontenc}
-% \usepackage{tikz}
-% \usepackage{xcolor}
-% \usepackage{enumitem}
-% \usepackage{tabularx}
+% Required packages
+\usepackage[empty]{fullpage}
+\usepackage{hyperref}
+\usepackage{fontawesome5}
+\usepackage{latexsym}
+\usepackage[sfdefault]{carlito}
+\usepackage[T1]{fontenc}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{tabularx}
 
-% % Custom colors
-% \definecolor{linkblue}{HTML}{0645AD}
-% \definecolor{lightgray}{gray}{0.8}
+% Custom colors
+\definecolor{linkblue}{HTML}{0645AD}
+\definecolor{lightgray}{gray}{0.8}
 
-% % Custom commands
-% \newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
-% \newcommand{\resdegree}[2]{
-%     \vspace{-1pt}\item[]
-%     \textbf{#1} \hfill \textit{#2}
-% }
-% \newcommand{\resheader}[2]{
-%     \begin{tikzpicture}
-%     \node[inner sep=0pt] (box) {\textbf{\large #1}};
-%     \draw[lightgray, thick](box.south east)--(box.south west);
-%     \end{tikzpicture}
-%     \vspace{-6pt}
-% }
+% Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resdegree}[2]{
+    \vspace{-1pt}\item[]
+    \textbf{#1} \hfill \textit{#2}
+}
+\newcommand{\resheader}[2]{
+    \begin{tikzpicture}
+    \node[inner sep=0pt] (box) {\textbf{\large #1}};
+    \draw[lightgray, thick](box.south east)--(box.south west);
+    \end{tikzpicture}
+    \vspace{-6pt}
+}
 
-% % Document formatting
-% \addtolength{\topmargin}{-.5in}
-% \addtolength{\textheight}{1.0in}
-% \addtolength{\textwidth}{0.5in}
-% \setlength{\parindent}{0pt}
+% Document formatting
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+\addtolength{\textwidth}{0.5in}
+\setlength{\parindent}{0pt}
 
-% \begin{document}
+\begin{document}
 
-% % Header
-% \begin{center}
-%     {\Huge \textbf{Joseph Laurent Krueger}} \\
-%     \vspace{3pt}
-%     {\Large Software Engineer} \\
-%     \vspace{3pt}
-%     \href{mailto:josephkrueger@protonmail.com}{\faEnvelope\ josephkrueger@protonmail.com} $\cdot$
-%     Seattle, WA $\cdot$
-%     \href{tel:3607633490}{\faPhone\ (360) 763-3490} \\
-%     \href{https://linkedin.com/in/jkru3}{\faLinkedin\ linkedin.com/in/jkru3} $\cdot$
-%     \href{https://github.com/jkru3}{\faGithub\ github.com/jkru3} $\cdot$
-%     \href{https://medium.com/@joeykrueger}{\faMedium\ medium.com/@joeykrueger}
-% \end{center}
+% Header
+\begin{center}
+    {\Huge \textbf{Joseph Laurent Krueger}} \\
+    \vspace{3pt}
+    {\Large Software Engineer} \\
+    \vspace{3pt}
+    \href{mailto:josephkrueger@protonmail.com}{\faEnvelope\ josephkrueger@protonmail.com} $\cdot$
+    Seattle, WA $\cdot$
+    \href{tel:3607633490}{\faPhone\ (360) 763-3490} \\
+    \href{https://linkedin.com/in/jkru3}{\faLinkedin\ linkedin.com/in/jkru3} $\cdot$
+    \href{https://github.com/jkru3}{\faGithub\ github.com/jkru3} $\cdot$
+    \href{https://medium.com/@joeykrueger}{\faMedium\ medium.com/@joeykrueger}
+\end{center}
 
-% % Education Section
-% \resheader{EDUCATION}{}
-% \begin{itemize}[leftmargin=0.15in, label={}]
-%     \resdegree{University of Washington (Seattle campus)}{Graduated with 3.70 GPA}
-%     B.S. Computer Science, Minor in Business \\
-%     President and Co-founder of Clearvote, Algorithmic Trading Club, Salsa Club, UW Farm \\
-%     \textit{Featured Coursework:} Algorithms, Computer Security, Data Structures, Distributed Systems (Paxos), 
-%     Hardware/Software Interface, Natural Language Processing, Parallel Computing, Software Design \& Implementation, 
-%     Systems Programming, Statistics, Accounting (with Excel), Management, Marketing
-% \end{itemize}
+% Education Section
+\resheader{EDUCATION}{}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \resdegree{University of Washington (Seattle campus)}{Graduated with 3.70 GPA}
+    B.S. Computer Science, Minor in Business \\
+    President and Co-founder of Clearvote, Algorithmic Trading Club, Salsa Club, UW Farm \\
+    \textit{Featured Coursework:} Algorithms, Computer Security, Data Structures, Distributed Systems (Paxos), 
+    Hardware/Software Interface, Natural Language Processing, Parallel Computing, Software Design \& Implementation, 
+    Systems Programming, Statistics, Accounting (with Excel), Management, Marketing
+\end{itemize}
 
-% % Experience Section
-% \resheader{PROFESSIONAL EXPERIENCE}{}
-% \begin{itemize}[leftmargin=0.15in, label={}]
-%     \item \textbf{Clean Power Research}, Software Engineering Intern \hfill December 2024 | Seattle, WA
-%     \begin{itemize}[leftmargin=0.3in, label={$\bullet$}]
-%         \resitem{Worked on the WattPlan team to develop an app that inserts charts into PDFs using dependency injected data in .NET}
-%         \resitem{Deployed existing orchestration infrastructure through AWS Lambda to connect with a containerized Node.JS app}
-%         \resitem{Designed new charts to generate on demand reports in under 5 seconds used by HVAC contractors across the country}
-%         \resitem{Wrote unit tests, integration tests and technical documentation following a strict, production-ready shipping standard}
-%     \end{itemize}
-%     % Add other experiences similarly
-% \end{itemize}
+% Experience Section
+\resheader{PROFESSIONAL EXPERIENCE}{}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \item \textbf{Clean Power Research}, Software Engineering Intern \hfill December 2024 | Seattle, WA
+    \begin{itemize}[leftmargin=0.3in, label={$\bullet$}]
+        \resitem{Worked on the WattPlan team to develop an app that inserts charts into PDFs using dependency injected data in .NET}
+        \resitem{Deployed existing orchestration infrastructure through AWS Lambda to connect with a containerized Node.JS app}
+        \resitem{Designed new charts to generate on demand reports in under 5 seconds used by HVAC contractors across the country}
+        \resitem{Wrote unit tests, integration tests and technical documentation following a strict, production-ready shipping standard}
+    \end{itemize}
+    % Add other experiences similarly
+\end{itemize}
 
-% % Skills Section
-% \resheader{SKILLS}{}
-% \textbf{Technical} \\
-% Python, Java, C\#, C, C++, Dart, R, HTML, JavaScript, TypeScript, Flutter, Flask, .NET 8, Next.js, React, Vue, 
-% AngularJS, MySQL, Docker, Podman, Git, GitHub, AWS (CDK, Lambda, DynamoDB, EC2, S3, RDB, Amplify), Google Cloud 
-% Platform, PyTorch, TensorFlow, Puppeteer, Selenium, Tailwind CSS, D3, Tableau, Highcharts, Figma \\
-% \vspace{5pt}
-% \textbf{Conceptual} \\
-% UX/UI, Data visualization, Web Scraping, Object-Orientated Language Design Patterns, Software Development 
-% Lifecycle (SDLC), Agile Methodology, Supervised Machine Learning, Large Language Models (LLMs), Search Engine 
-% Optimization (SEO), Containerization, CI/CD Pipelines, Cookie security / Cross-Site Scripting, SQL Injection, 
-% IAM Resource Management
+% Skills Section
+\resheader{SKILLS}{}
+\textbf{Technical} \\
+Python, Java, C\#, C, C++, Dart, R, HTML, JavaScript, TypeScript, Flutter, Flask, .NET 8, Next.js, React, Vue, 
+AngularJS, MySQL, Docker, Podman, Git, GitHub, AWS (CDK, Lambda, DynamoDB, EC2, S3, RDB, Amplify), Google Cloud 
+Platform, PyTorch, TensorFlow, Puppeteer, Selenium, Tailwind CSS, D3, Tableau, Highcharts, Figma \\
+\vspace{5pt}
+\textbf{Conceptual} \\
+UX/UI, Data visualization, Web Scraping, Object-Orientated Language Design Patterns, Software Development 
+Lifecycle (SDLC), Agile Methodology, Supervised Machine Learning, Large Language Models (LLMs), Search Engine 
+Optimization (SEO), Containerization, CI/CD Pipelines, Cookie security / Cross-Site Scripting, SQL Injection, 
+IAM Resource Managementmn b
 
-% % Projects Section
-% \resheader{PROJECTS}{}
-% \begin{itemize}[leftmargin=0.15in, label={}]
-%     \item \textbf{Dempsey Startup Competition}, AutoDubs --- Semi-Finalist \hfill March 2023 -- May 2023
-%     \item \textbf{DubHacks Hackathon}, illustrAItor --- Winner \hfill October 2022
-%     \item \textbf{Unsuccessful Music Career}, Spotify \hfill September 2020 -- July 2021
-% \end{itemize}
+% Projects Section
+\resheader{PROJECTS}{}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \item \textbf{Dempsey Startup Competition}, AutoDubs --- Semi-Finalist \hfill March 2023 -- May 2023
+    \item \textbf{DubHacks Hackathon}, illustrAItor --- Winner \hfill October 2022
+    \item \textbf{Unsuccessful Music Career}, Spotify \hfill September 2020 -- July 2021
+\end{itemize}
 
-% \end{document}
+\end{document}

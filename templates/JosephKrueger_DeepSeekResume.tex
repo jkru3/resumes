@@ -1,3 +1,5 @@
+\documentclass[11pt,letterpaper]{article}
+
 \documentclass[11pt]{article}
 \usepackage[margin=1in]{geometry}
 \usepackage{enumitem}
@@ -8,22 +10,22 @@
 \usepackage{titlesec}
 \usepackage{fontawesome}
 
-% Custom colors
-\definecolor{primary}{RGB}{0, 51, 102}
-\definecolor{secondary}{RGB}{102, 102, 102}
+% % Custom colors
+% \definecolor{primary}{RGB}{0, 51, 102}
+% \definecolor{secondary}{RGB}{102, 102, 102}
 
-% Custom fonts
-\setmainfont{Arial}
-\newfontfamily{\headingfont}{Arial Bold}
+% % Custom fonts
+% \setmainfont{Arial}
+% \newfontfamily{\headingfont}{Arial Bold}
 
-% Section formatting
-\titleformat{\section}
-  {\headingfont\Large\color{primary}}
-  {\thesection}{1em}{}
+% % Section formatting
+% \titleformat{\section}
+%   {\headingfont\Large\color{primary}}
+%   {\thesection}{1em}{}
 
-\titleformat{\subsection}
-  {\headingfont\large\color{primary}}
-  {\thesubsection}{1em}{}
+% \titleformat{\subsection}
+%   {\headingfont\large\color{primary}}
+%   {\thesubsection}{1em}{}
 
 % Custom commands
 \newcommand{\resumeItem}[1]{
@@ -46,19 +48,19 @@
 
 \begin{document}
 
-% Header
-\begin{center}
-  {\headingfont\Huge\color{primary} Joseph Laurent Krueger} \\
-  \vspace{0.5em}
-  {\large Software Engineer} \\
-  \vspace{0.5em}
-  \faEnvelope\ \href{mailto:josephkrueger@protonmail.com}{josephkrueger@protonmail.com} \hfill
-  \faMapMarker\ Seattle, WA \hfill
-  \faPhone\ (360) 763-3490 \\
-  \faLinkedin\ \href{https://linkedin.com/in/jkru3/}{linkedin.com/in/jkru3} \hfill
-  \faGithub\ \href{https://github.com/jkru3}{github.com/jkru3} \hfill
-  \faMedium\ \href{https://medium.com/gjoeykrueger}{medium.com/gjoeykrueger}
-\end{center}
+% % Header
+% \begin{center}
+%   {\headingfont\Huge\color{primary} Joseph Laurent Krueger} \\
+%   \vspace{0.5em}
+%   {\large Software Engineer} \\
+%   \vspace{0.5em}
+%   \faEnvelope\ \href{mailto:josephkrueger@protonmail.com}{josephkrueger@protonmail.com} \hfill
+%   \faMapMarker\ Seattle, WA \hfill
+%   \faPhone\ (360) 763-3490 \\
+%   \faLinkedin\ \href{https://linkedin.com/in/jkru3/}{linkedin.com/in/jkru3} \hfill
+%   \faGithub\ \href{https://github.com/jkru3}{github.com/jkru3} \hfill
+%   \faMedium\ \href{https://medium.com/gjoeykrueger}{medium.com/gjoeykrueger}
+% \end{center}
 
 % Education
 \section{Education}
@@ -68,52 +70,52 @@
   \resumeItem{\textit{Featured Coursework:} Algorithms, Computer Security, Data Structures, Distributed Systems (Paxos), Hardware/Software Interface, Natural Language Processing, Parallel Computing, Software Design \& Implementation, Systems Programming, Statistics, Accounting (with Excel), Management, Marketing}
 \end{itemize}
 
-% Professional Experience
-\section{Professional Experience}
-\resumeSubheading{Clean Power Research}{June 2024 – October 2024}{Software Engineering Intern}{Bellevue, WA}
-\begin{itemize}[leftmargin=*]
-  \resumeItem{Worked on the WattPlan team to develop an app that inserts charts into PDFs using dependency injected data in .NET}
-  \resumeItem{Deployed existing orchestration infrastructure through AWS Lambda to connect with a \textbf{containerized Node.JS app}}
-  \resumeItem{Designed new charts to generate on-demand reports in under 5 seconds used by HVAC contractors across the country}
-  \resumeItem{Wrote unit tests, integration tests, and technical documentation following a strict, production-ready shipping standard}
-\end{itemize}
+% % Professional Experience
+% \section{Professional Experience}
+% \resumeSubheading{Clean Power Research}{June 2024 – October 2024}{Software Engineering Intern}{Bellevue, WA}
+% \begin{itemize}[leftmargin=*]
+%   \resumeItem{Worked on the WattPlan team to develop an app that inserts charts into PDFs using dependency injected data in .NET}
+%   \resumeItem{Deployed existing orchestration infrastructure through AWS Lambda to connect with a \textbf{containerized Node.JS app}}
+%   \resumeItem{Designed new charts to generate on-demand reports in under 5 seconds used by HVAC contractors across the country}
+%   \resumeItem{Wrote unit tests, integration tests, and technical documentation following a strict, production-ready shipping standard}
+% \end{itemize}
 
-\resumeSubheading{Clearvote}{August 2023 – Present}{Co-founder}{Seattle, WA}
-\begin{itemize}[leftmargin=*]
-  \resumeItem{Founded a student-run non-profit startup developing cross-platform \textbf{Next.js application} with over 3000 users}
-  \resumeItem{Designed an ML/AI pipeline that preprocesses web-scraped local candidate data with sentiment analysis (fine-tuned GPT-4) and voting district geodata to provide localized election information across the state of Washington}
-  \resumeItem{Setup a \textbf{throttled RESTful API} using \textbf{Lambda} and \textbf{DynamoDB (NoSQL)} to optimize database access and reduce costs}
-  \resumeItem{Leading shared team vision on UI design, security, cloud architecture scalability, and open-source contributions}
-\end{itemize}
+% \resumeSubheading{Clearvote}{August 2023 – Present}{Co-founder}{Seattle, WA}
+% \begin{itemize}[leftmargin=*]
+%   \resumeItem{Founded a student-run non-profit startup developing cross-platform \textbf{Next.js application} with over 3000 usersawef}
+%   \resumeItem{Designed an ML/AI pipeline that preprocesses web-scraped local candidate data with sentiment analysis (fine-tuned GPT-4) and voting district geodata to provide localized election information across the state of Washington}
+%   \resumeItem{Setup a \textbf{throttled RESTful API} using \textbf{Lambda} and \textbf{DynamoDB (NoSQL)} to optimize database access and reduce costs}
+%   \resumeItem{Leading shared team vision on UI design, security, cloud architecture scalability, and open-source contributions}
+% \end{itemize}
 
-\resumeSubheading{MCG Health}{June 2023 – September 2023}{Software Engineering Intern}{Seattle, WA}
-\begin{itemize}[leftmargin=*]
-  \resumeItem{Worked on the CareWebQI Team to overhaul an In-patient diagnostic and prescription tool used by \textbf{2,800 hospitals}}
-  \resumeItem{Migrated from a deprecated version of \textbf{Angular} to work with a .NET Core backend and setup a CI/CD pipeline in Azure}
-  \resumeItem{Added auto-completion and code lookup support for \textbf{70,000 medical care guideline codes}}
-  \resumeItem{Applied agile project management principles in cross-team sprint planning sessions with \textbf{Confluence} and \textbf{JIRA}}
-\end{itemize}
+% \resumeSubheading{MCG Health}{June 2023 – September 2023}{Software Engineering Intern}{Seattle, WA}
+% \begin{itemize}[leftmargin=*]
+%   \resumeItem{Worked on the CareWebQI Team to overhaul an In-patient diagnostic and prescription tool used by \textbf{2,800 hospitals}}
+%   \resumeItem{Migrated from a deprecated version of \textbf{Angular} to work with a .NET Core backend and setup a CI/CD pipeline in Azure}
+%   \resumeItem{Added auto-completion and code lookup support for \textbf{70,000 medical care guideline codes}}
+%   \resumeItem{Applied agile project management principles in cross-team sprint planning sessions with \textbf{Confluence} and \textbf{JIRA}}
+% \end{itemize}
 
-\resumeSubheading{The University of Washington}{January 2023 – June 2023}{Teaching Assistant}{Seattle, WA}
-\begin{itemize}[leftmargin=*]
-  \resumeItem{Led bi-weekly instructional quiz sessions and wrote exam questions for a new intro computer science course (CSE 122)}
-  \resumeItem{Held office hours and individual tutoring for challenging topics of an upper-level systems programming class (CSE 351)}
-  \resumeItem{Drafted grading policy for homework, midterms, quizzes, and exams}
-\end{itemize}
+% \resumeSubheading{The University of Washington}{January 2023 – June 2023}{Teaching Assistant}{Seattle, WA}
+% \begin{itemize}[leftmargin=*]
+%   \resumeItem{Led bi-weekly instructional quiz sessions and wrote exam questions for a new intro computer science course (CSE 122)}
+%   \resumeItem{Held office hours and individual tutoring for challenging topics of an upper-level systems programming class (CSE 351)}
+%   \resumeItem{Drafted grading policy for homework, midterms, quizzes, and exams}
+% \end{itemize}
 
-% Skills
-\section{Skills}
-\begin{itemize}[leftmargin=*]
-  \resumeItem{\textbf{Technical:} Python, Java, C#, C, C++, Dart, R, HTML, JavaScript, TypeScript, Flutter, Flask, .NET 8, Next.js, React, Vue, AngularJS, MySQL, Docker, Podman, Git, GitHub, AWS (CDK, Lambda, DynamoDB, EC2, S3, RDB, Amplify), Google Cloud Platform, PyTorch, TensorFlow, Puppeteer, Selenium, Tailwind CSS, D3, Tableau, Highcharts, Figma}
-  \resumeItem{\textbf{Conceptual:} UX/UI, Data visualization, Web Scraping, Object-Orientated Language Design Patterns, Software Development Lifecycle (SDLC), Agile Methodology, Supervised Machine Learning, Large Language Models (LLMs), Search Engine Optimization (SEO), Containerization, CI/CD Pipelines, Cookie security / Cross-Site Scripting, SQL Injection, IAM Resource Management}
-\end{itemize}
+% % Skills
+% \section{Skills}
+% \begin{itemize}[leftmargin=*]
+%   \resumeItem{\textbf{Technical:} Python, Java, C#, C, C++, Dart, R, HTML, JavaScript, TypeScript, Flutter, Flask, .NET 8, Next.js, React, Vue, AngularJS, MySQL, Docker, Podman, Git, GitHub, AWS (CDK, Lambda, DynamoDB, EC2, S3, RDB, Amplify), Google Cloud Platform, PyTorch, TensorFlow, Puppeteer, Selenium, Tailwind CSS, D3, Tableau, Highcharts, Figma}
+%   \resumeItem{\textbf{Conceptual:} UX/UI, Data visualization, Web Scraping, Object-Orientated Language Design Patterns, Software Development Lifecycle (SDLC), Agile Methodology, Supervised Machine Learning, Large Language Models (LLMs), Search Engine Optimization (SEO), Containerization, CI/CD Pipelines, Cookie security / Cross-Site Scripting, SQL Injection, IAM Resource Management}
+% \end{itemize}
 
-% Projects
-\section{Projects}
-\begin{itemize}[leftmargin=*]
-  \resumeItem{\textbf{Dempsey Startup Competition,} AutoDubs — Semi-Finalist \hfill March 2023 – May 2023}
-  \resumeItem{\textbf{DubHacks Hackathon,} illustrator — Winner \hfill October 2022}
-  \resumeItem{\textbf{Unsuccessful Music Career,} Spotify \hfill September 2020 – July 2021}
-\end{itemize}
+% % Projects
+% \section{Projects}
+% \begin{itemize}[leftmargin=*]
+%   \resumeItem{\textbf{Dempsey Startup Competition,} AutoDubs — Semi-Finalist \hfill March 2023 – May 2023}
+%   \resumeItem{\textbf{DubHacks Hackathon,} illustrator — Winner \hfill October 2022}
+%   \resumeItem{\textbf{Unsuccessful Music Career,} Spotify \hfill September 2020 – July 2021}
+% \end{itemize}
 
 \end{document}
