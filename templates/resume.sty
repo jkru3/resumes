@@ -1,0 +1,51 @@
+% resume.sty
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{resume}[2023-10-01 Custom Resume Styling]
+
+% Required packages
+\RequirePackage[margin=1in]{geometry}
+\RequirePackage{enumitem}
+\RequirePackage{fontspec}
+\RequirePackage{xcolor}
+\RequirePackage{hyperref}
+\RequirePackage{parskip}
+\RequirePackage{titlesec}
+\RequirePackage{fontawesome}
+
+% Custom colors
+\definecolor{primary}{RGB}{0, 51, 102}
+\definecolor{secondary}{RGB}{102, 102, 102}
+
+% Custom fonts
+\setmainfont{Arial}
+\newfontfamily{\headingfont}{Arial Bold}
+
+% Section formatting
+\titleformat{\section}
+  {\headingfont\Large\color{primary}}
+  {\thesection}{1em}{}
+
+\titleformat{\subsection}
+  {\headingfont\large\color{primary}}
+  {\thesubsection}{1em}{}
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{#1}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-0.5em}
+  \subsection{
+    \textbf{#1} \hfill \textit{\small#2} \\
+    \textit{\small#3} \hfill \textit{\small#4}
+  }
+  \vspace{-0.5em}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-0.5em}}
+
+% No indentation
+\setlength{\parindent}{0pt}
+
+\endinput
