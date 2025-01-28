@@ -1,51 +1,85 @@
-% resume.sty
+% default.sty
+% Custom style file for the resume
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND SETUP
+%----------------------------------------------------------------------------------------
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{resume}[2023-10-01 Custom Resume Styling]
+\ProvidesPackage{default}[2023/10/01 Custom Resume Style]
 
 % Required packages
-\RequirePackage[margin=1in]{geometry}
-\RequirePackage{enumitem}
-\RequirePackage{fontspec}
-\RequirePackage{xcolor}
-\RequirePackage{hyperref}
-\RequirePackage{parskip}
-\RequirePackage{titlesec}
-\RequirePackage{fontawesome}
+\usepackage{setspace}
+\usepackage[scale=0.9]{geometry}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{helvet}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{graphicx}
 
-% Custom colors
-\definecolor{primary}{RGB}{0, 51, 102}
-\definecolor{secondary}{RGB}{102, 102, 102}
+%----------------------------------------------------------------------------------------
+%	STYLING
+%----------------------------------------------------------------------------------------
+% Set sans-serif as default font
+\renewcommand\familydefault{\sfdefault}
 
-% Custom fonts
-\setmainfont{Arial}
-\newfontfamily{\headingfont}{Arial Bold}
+% Define colors
+\definecolor{metablue}{HTML}{4285F4}
+\definecolor{metalightblue}{HTML}{DB4437}
+\definecolor{lightgrey}{HTML}{9AA0A6}
 
-% Section formatting
-\titleformat{\section}
-  {\headingfont\Large\color{primary}}
-  {\thesection}{1em}{}
+% Line spacing
+\setstretch{1.08}
 
-\titleformat{\subsection}
-  {\headingfont\large\color{primary}}
-  {\thesubsection}{1em}{}
+% Section title formatting
+\titleformat{\section}{\large\bfseries\color{primarycolor}}{}{0em}{}[\titlerule]
 
-% Custom commands
-\newcommand{\resumeItem}[1]{
-  \item\small{#1}
+% Customize itemize environment
+\setlist[itemize]{leftmargin=*,nosep}
+
+%----------------------------------------------------------------------------------------
+%	CUSTOM COMMANDS
+%----------------------------------------------------------------------------------------
+\newcommand{\primarycolor}{\color{metablue}}
+\newcommand{\secondarycolor}{\color{metalightblue}}
+\newcommand{\hyperlinkcolor}{\color{lightgrey}}
+
+% Command for the header section
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+
+% Then modify the header command
+\newcommand{\header}[2]{
+    \begin{tabularx}{\linewidth}{@{} C @{}}
+        \Huge{Joseph L. Krueger} \\[7.5pt]
+        #1 \ {\Large #2} \\  % Made #2 larger with \Large
+        \href{mailto:josephkrueger@protonmail.com}{\faEnvelope\ josephkrueger@protonmail.com} \ $|$ 
+        {\faMapPin\ Seattle, WA} \ $|$ 
+        {\faMobile\ 360-763-3490} \\
+
+        \href{https://linkedin.com/in/jkru3}{\faLinkedin\ linkedin.com/in/jkru3} \ $|$ 
+        \href{https://joey-krueger.com}{\faGlobeAmericas\ https://joey-krueger.com} \\
+    \end{tabularx}
 }
 
-\newcommand{\resumeSubheading}[4]{
-  \vspace{-0.5em}
-  \subsection{
-    \textbf{#1} \hfill \textit{\small#2} \\
-    \textit{\small#3} \hfill \textit{\small#4}
-  }
-  \vspace{-0.5em}
+\newcommand{\educationentry}[5]{
+    \begin{tabularx}{\textwidth}{lX}
+        \textbf{#1} & \hfill {\primarycolor#3} $|$ #4 \\[0pt]
+        #2 & \hfill #5 \\[0pt]
+    \end{tabularx}
 }
 
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-0.5em}}
+\newcommand{\linkentry}[5]{
+    \begin{tabularx}{\textwidth}{lX}
+        \href{#3}{\textbf{#1,} #2 \small{\faLink}} & \hfill {\primarycolor#4} $|$ #5 \\[0pt]
+    \end{tabularx}
+}
 
-% No indentation
-\setlength{\parindent}{0pt}
-
-\endinput
+\newcommand{\projectentry}[4]{
+    \begin{tabularx}{\textwidth}{lX}
+        \href{#3}{\textbf{#1,} #2 \small{\faLink}} & \hfill {\primarycolor#4} \\[0pt]
+    \end{tabularx}
+}
