@@ -29,16 +29,37 @@
 % Set sans-serif as default font
 \renewcommand\familydefault{\sfdefault}
 
-% Define colors
-\definecolor{primarycolor}{HTML}{0266E4}
-\definecolor{secondarycolor}{HTML}{0182FF}
-\definecolor{hyperlinkcolor}{HTML}{011627}
+% Available colors
+\definecolor{apple-grey}{HTML}{B0B0B0}
+\definecolor{helion-pink}{HTML}{CD2783}
 
-% Define border colors
-\definecolor{bordercolor1}{HTML}{FF0000} % Top-left quadrant color
-\definecolor{bordercolor2}{HTML}{00FF00} % Top-right quadrant color
-\definecolor{bordercolor3}{HTML}{0000FF} % Bottom-left quadrant color
-\definecolor{bordercolor4}{HTML}{FFFF00} % Bottom-right quadrant color
+\definecolor{google_red}{HTML}{EA3A1D}
+\definecolor{microsoft-red}{HTML}{F54F24}
+\definecolor{adobe-red}{HTML}{EE1C25}
+\definecolor{data_bricks-red}{HTML}{FF3620}
+\definecolor{amazon-orange}{HTML}{F8971C}
+
+\definecolor{google_yellow}{HTML}{FDB900}
+\definecolor{microsoft-yellow}{HTML}{FFB903}
+
+\definecolor{google_green}{HTML}{23A146}
+\definecolor{microsoft-green}{HTML}{81B804}
+
+\definecolor{blue_origin-blue}{HTML}{0133DD}
+\definecolor{google_blue}{HTML}{347AF7}
+\definecolor{microsoft-blue}{HTML}{00A4EF}
+\definecolor{meta-blue}{HTML}{0266E4}
+\definecolor{meta-light_blue}{HTML}{0182FF}
+\definecolor{dark_blue}{HTML}{011627}
+
+% Defined colors for this resume
+\colorlet{primarycolor}{meta-blue} % Darker main color
+\colorlet{secondarycolor}{meta-blue} % Lighter (icon) color
+\colorlet{bordercolor1}{meta-blue} % Top-left quadrant color
+\colorlet{bordercolor2}{meta-light_blue} % Top-right quadrant color
+\colorlet{bordercolor3}{meta-blue} % Bottom-left quadrant color
+\colorlet{bordercolor4}{meta-light_blue} % Bottom-right quadrant color
+
 
 % Line spacing
 \setstretch{1.08}
@@ -59,15 +80,15 @@
 % Then modify the header command
 \newcommand{\header}[2]{
     \begin{tabularx}{\linewidth}{@{} C @{}}
-        \Huge{Joseph L. Krueger} \\[7.5pt]
-        #1 \ {\Large #2} \\  % Made #2 larger with \Large
-        \href{mailto:josephfkrueger@protonmail.com}{\faEnvelope\ josephkrueger@protonmail.com} \ $|$ 
-        {\faMapPin\ Seattle, WA} \ $|$ 
-        {\faMobile\ 360-763-3490} \\
-
-        \href{https://linkedin.com/in/jkru3}{\faLinkedin\ linkedin.com/in/jkru3} \ $|$ 
-        \href{https://joey-krueger.com}{\faGlobeAmericas\ https://joey-krueger.com} \\
+        \Huge\textbf{Joseph L. Krueger} \\[5pt]
+        #1 \ {\Large #2} \\[5pt]
+        \href{mailto:josephfkrueger@protonmail.com}{{\color{primarycolor}\faEnvelope}\ josephkrueger@protonmail.com} \ $|$ 
+        {{\color{primarycolor}\faMapPin}\ Seattle, WA} \ $|$ 
+        {{\color{primarycolor}\faMobile}\ 360-763-3490} \\[3pt]
+        \href{https://linkedin.com/in/jkru3}{{\color{primarycolor}\faLinkedin}\ linkedin.com/in/jkru3} \ $|$ 
+        \href{https://joey-krueger.com}{{\color{primarycolor}\faGlobeAmericas}\ https://joey-krueger.com}
     \end{tabularx}
+    \vspace{-10pt} % Reduce space after header
 }
 
 \newcommand{\educationentry}[5]{
@@ -88,6 +109,14 @@
         \href{#3}{\textbf{#1,} #2 \small{\faLink}} & \hfill {\textcolor{primarycolor}{#4}} \\[0pt]
     \end{tabularx}
 }
+
+% Section title formatting
+\titleformat{\section}
+    {\normalfont\large\bfseries\centering\color{primarycolor}}
+    {}
+    {0em} % Spacing
+    {}
+    [\titlerule\vspace{-0.5\baselineskip}]
 
 % Remove page numbers
 \pagestyle{empty}
