@@ -1,11 +1,10 @@
-% default.sty
+% styling.sty
 % Custom style file for the resume
-
 %----------------------------------------------------------------------------------------
 %	PACKAGES AND SETUP
 %----------------------------------------------------------------------------------------
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{default}[2023/10/01 Custom Resume Style]
+\ProvidesPackage{styling}
 
 % Required packages
 \usepackage{setspace}
@@ -20,6 +19,9 @@
 \usepackage{url}
 \usepackage{hyperref}
 \usepackage{graphicx}
+\usepackage{tikz} % For drawing the border
+\usepackage{fancyhdr} % For header/footer customization
+\usepackage{eso-pic} % For adding content to every page
 
 %----------------------------------------------------------------------------------------
 %	STYLING
@@ -28,9 +30,15 @@
 \renewcommand\familydefault{\sfdefault}
 
 % Define colors
-\definecolor{metablue}{HTML}{4285F4}
-\definecolor{metalightblue}{HTML}{DB4437}
-\definecolor{lightgrey}{HTML}{9AA0A6}
+\definecolor{primarycolor}{HTML}{0266E4}
+\definecolor{secondarycolor}{HTML}{0182FF}
+\definecolor{hyperlinkcolor}{HTML}{011627}
+
+% Define border colors
+\definecolor{bordercolor1}{HTML}{FF0000} % Top-left quadrant color
+\definecolor{bordercolor2}{HTML}{00FF00} % Top-right quadrant color
+\definecolor{bordercolor3}{HTML}{0000FF} % Bottom-left quadrant color
+\definecolor{bordercolor4}{HTML}{FFFF00} % Bottom-right quadrant color
 
 % Line spacing
 \setstretch{1.08}
@@ -44,9 +52,6 @@
 %----------------------------------------------------------------------------------------
 %	CUSTOM COMMANDS
 %----------------------------------------------------------------------------------------
-\newcommand{\primarycolor}{\color{metablue}}
-\newcommand{\secondarycolor}{\color{metalightblue}}
-\newcommand{\hyperlinkcolor}{\color{lightgrey}}
 
 % Command for the header section
 \newcolumntype{C}{>{\centering\arraybackslash}X}
@@ -56,7 +61,7 @@
     \begin{tabularx}{\linewidth}{@{} C @{}}
         \Huge{Joseph L. Krueger} \\[7.5pt]
         #1 \ {\Large #2} \\  % Made #2 larger with \Large
-        \href{mailto:josephkrueger@protonmail.com}{\faEnvelope\ josephkrueger@protonmail.com} \ $|$ 
+        \href{mailto:josephfkrueger@protonmail.com}{\faEnvelope\ josephkrueger@protonmail.com} \ $|$ 
         {\faMapPin\ Seattle, WA} \ $|$ 
         {\faMobile\ 360-763-3490} \\
 
@@ -67,19 +72,40 @@
 
 \newcommand{\educationentry}[5]{
     \begin{tabularx}{\textwidth}{lX}
-        \textbf{#1} & \hfill {\primarycolor#3} $|$ #4 \\[0pt]
+        \textbf{#1} & \hfill {\textcolor{primarycolor}{#3}} $|$ #4 \\[0pt]
         #2 & \hfill #5 \\[0pt]
     \end{tabularx}
 }
 
 \newcommand{\linkentry}[5]{
     \begin{tabularx}{\textwidth}{lX}
-        \href{#3}{\textbf{#1,} #2 \small{\faLink}} & \hfill {\primarycolor#4} $|$ #5 \\[0pt]
+        \href{#3}{\textbf{#1,} #2 \small{\faLink}} & \hfill {\textcolor{primarycolor}{#4}} $|$ #5 \\[0pt]
     \end{tabularx}
 }
 
 \newcommand{\projectentry}[4]{
     \begin{tabularx}{\textwidth}{lX}
-        \href{#3}{\textbf{#1,} #2 \small{\faLink}} & \hfill {\primarycolor#4} \\[0pt]
+        \href{#3}{\textbf{#1,} #2 \small{\faLink}} & \hfill {\textcolor{primarycolor}{#4}} \\[0pt]
     \end{tabularx}
+}
+
+% Remove page numbers
+\pagestyle{empty}
+
+% Add border to each page
+\AddToShipoutPictureBG{%
+    \begin{tikzpicture}[remember picture, overlay]
+        % Top-left quadrant
+        \draw[bordercolor1, line width=3pt] (current page.north west) -- (current page.west);
+        \draw[bordercolor1, line width=3pt] (current page.north west) -- (current page.north);
+        % Top-right quadrant
+        \draw[bordercolor2, line width=3pt] (current page.north east) -- (current page.east);
+        \draw[bordercolor2, line width=3pt] (current page.north east) -- (current page.north);
+        % Bottom-left quadrant
+        \draw[bordercolor3, line width=3pt] (current page.south west) -- (current page.west);
+        \draw[bordercolor3, line width=3pt] (current page.south west) -- (current page.south);
+        % Bottom-right quadrant
+        \draw[bordercolor4, line width=3pt] (current page.south east) -- (current page.east);
+        \draw[bordercolor4, line width=3pt] (current page.south east) -- (current page.south);
+    \end{tikzpicture}
 }
