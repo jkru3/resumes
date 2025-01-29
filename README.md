@@ -18,3 +18,15 @@ Follow the form
 1. Accomplished X
 2. Measured by Y
 3. By doing Z
+
+## Claude/GPT/DeepSeek Prompt for generating ATS recommendations
+The following is a job description for a position I am applying to:
+```md
+
+```
+Please generate:
+1. generally what would be effective on a resume for this job
+2. string-array list of college courses that would be good to include on a resume
+3. string-array list of technical skills (languages, frameworks)
+4. string array list of conceptual skills (paradigms, types of work for this tech role)
+5. string-array list of types of projects to include in my projects section

@@ -24,27 +24,20 @@
 \usepackage{eso-pic} % For adding content to every page
 
 %----------------------------------------------------------------------------------------
-%	STYLING
+%	DEFINITIONS
 %----------------------------------------------------------------------------------------
-% Set sans-serif as default font
-\renewcommand\familydefault{\sfdefault}
 
-% Available colors
 \definecolor{apple-grey}{HTML}{B0B0B0}
 \definecolor{helion-pink}{HTML}{CD2783}
-
 \definecolor{google_red}{HTML}{EA3A1D}
 \definecolor{microsoft-red}{HTML}{F54F24}
 \definecolor{adobe-red}{HTML}{EE1C25}
 \definecolor{data_bricks-red}{HTML}{FF3620}
 \definecolor{amazon-orange}{HTML}{F8971C}
-
 \definecolor{google_yellow}{HTML}{FDB900}
 \definecolor{microsoft-yellow}{HTML}{FFB903}
-
 \definecolor{google_green}{HTML}{23A146}
 \definecolor{microsoft-green}{HTML}{81B804}
-
 \definecolor{blue_origin-blue}{HTML}{0133DD}
 \definecolor{google_blue}{HTML}{347AF7}
 \definecolor{microsoft-blue}{HTML}{00A4EF}
@@ -52,23 +45,34 @@
 \definecolor{meta-light_blue}{HTML}{0182FF}
 \definecolor{dark_blue}{HTML}{011627}
 
+%----------------------------------------------------------------------------------------
+%	STYLING
+%----------------------------------------------------------------------------------------
+
+% Set sans-serif as default font
+\renewcommand\familydefault{\sfdefault}
+
 % Defined colors for this resume
-\colorlet{primarycolor}{meta-blue} % Darker main color
 \colorlet{secondarycolor}{meta-blue} % Lighter (icon) color
-\colorlet{bordercolor1}{meta-blue} % Top-left quadrant color
-\colorlet{bordercolor2}{meta-light_blue} % Top-right quadrant color
-\colorlet{bordercolor3}{meta-blue} % Bottom-left quadrant color
-\colorlet{bordercolor4}{meta-light_blue} % Bottom-right quadrant color
+\colorlet{primarycolor}{black!33!secondarycolor} % Most company colors are light, so we darken it a bit to get the primary color
+\colorlet{bordercolor1}{primarycolor} % Top-left quadrant color
+\colorlet{bordercolor2}{secondarycolor} % Top-right quadrant color
+\colorlet{bordercolor3}{secondarycolor} % Bottom-left quadrant color
+\colorlet{bordercolor4}{primarycolor} % Bottom-right quadrant color
 
+% VERTICAL Line spacing. Adjust to fit on one page
+\setstretch{1.12}
 
-% Line spacing
-\setstretch{1.08}
+% Customize itemize environment (notice the indentation here)
+\setlist[itemize]{nosep, leftmargin=2em}
 
 % Section title formatting
-\titleformat{\section}{\large\bfseries\color{primarycolor}}{}{0em}{}[\titlerule]
-
-% Customize itemize environment
-\setlist[itemize]{leftmargin=*,nosep}
+\titleformat{\section}
+    {\normalfont\large\bfseries\centering\color{primarycolor}}
+    {}
+    {0em} % Spacing
+    {}
+    [\titlerule\vspace{-0.5\baselineskip}]
 
 %----------------------------------------------------------------------------------------
 %	CUSTOM COMMANDS
@@ -78,9 +82,10 @@
 \newcolumntype{C}{>{\centering\arraybackslash}X}
 
 % Then modify the header command
-\newcommand{\header}[2]{
+\newcommand{\headerwithlogo}[2]{
+    \noindent
     \begin{tabularx}{\linewidth}{@{} C @{}}
-        \Huge\textbf{Joseph L. Krueger} \\[5pt]
+        \Huge\textbf{Joseph Laurent Krueger} \\[5pt]
         #1 \ {\Large #2} \\[5pt]
         \href{mailto:josephfkrueger@protonmail.com}{{\color{primarycolor}\faEnvelope}\ josephkrueger@protonmail.com} \ $|$ 
         {{\color{primarycolor}\faMapPin}\ Seattle, WA} \ $|$ 
@@ -88,7 +93,20 @@
         \href{https://linkedin.com/in/jkru3}{{\color{primarycolor}\faLinkedin}\ linkedin.com/in/jkru3} \ $|$ 
         \href{https://joey-krueger.com}{{\color{primarycolor}\faGlobeAmericas}\ https://joey-krueger.com}
     \end{tabularx}
-    \vspace{-10pt} % Reduce space after header
+}
+
+% Then modify the header command
+\newcommand{\header}[1]{
+    \noindent
+    \begin{tabularx}{\linewidth}{@{} C @{}}
+        \Huge\textbf{Joseph Laurent Krueger} \\[5pt]
+        {\Large #1} \\[5pt]
+        \href{mailto:josephfkrueger@protonmail.com}{{\color{primarycolor}\faEnvelope}\ josephkrueger@protonmail.com} \ $|$ 
+        {{\color{primarycolor}\faMapPin}\ Seattle, WA} \ $|$ 
+        {{\color{primarycolor}\faMobile}\ 360-763-3490} \\[3pt]
+        \href{https://linkedin.com/in/jkru3}{{\color{primarycolor}\faLinkedin}\ linkedin.com/in/jkru3} \ $|$ 
+        \href{https://joey-krueger.com}{{\color{primarycolor}\faGlobeAmericas}\ https://joey-krueger.com}
+    \end{tabularx}
 }
 
 \newcommand{\educationentry}[5]{
@@ -110,14 +128,6 @@
     \end{tabularx}
 }
 
-% Section title formatting
-\titleformat{\section}
-    {\normalfont\large\bfseries\centering\color{primarycolor}}
-    {}
-    {0em} % Spacing
-    {}
-    [\titlerule\vspace{-0.5\baselineskip}]
-
 % Remove page numbers
 \pagestyle{empty}
 
@@ -125,16 +135,16 @@
 \AddToShipoutPictureBG{%
     \begin{tikzpicture}[remember picture, overlay]
         % Top-left quadrant
-        \draw[bordercolor1, line width=3pt] (current page.north west) -- (current page.west);
-        \draw[bordercolor1, line width=3pt] (current page.north west) -- (current page.north);
+        \draw[bordercolor1, line width=4pt] (current page.north west) -- (current page.west);
+        \draw[bordercolor1, line width=4pt] (current page.north west) -- (current page.north);
         % Top-right quadrant
-        \draw[bordercolor2, line width=3pt] (current page.north east) -- (current page.east);
-        \draw[bordercolor2, line width=3pt] (current page.north east) -- (current page.north);
+        \draw[bordercolor2, line width=4pt] (current page.north east) -- (current page.east);
+        \draw[bordercolor2, line width=4pt] (current page.north east) -- (current page.north);
         % Bottom-left quadrant
-        \draw[bordercolor3, line width=3pt] (current page.south west) -- (current page.west);
-        \draw[bordercolor3, line width=3pt] (current page.south west) -- (current page.south);
+        \draw[bordercolor3, line width=4pt] (current page.south west) -- (current page.west);
+        \draw[bordercolor3, line width=4pt] (current page.south west) -- (current page.south);
         % Bottom-right quadrant
-        \draw[bordercolor4, line width=3pt] (current page.south east) -- (current page.east);
-        \draw[bordercolor4, line width=3pt] (current page.south east) -- (current page.south);
+        \draw[bordercolor4, line width=4pt] (current page.south east) -- (current page.east);
+        \draw[bordercolor4, line width=4pt] (current page.south east) -- (current page.south);
     \end{tikzpicture}
 }
