@@ -10,15 +10,15 @@
 %----------------------------------------------------------------------------------------
 
 % Defined colors for this resume
-\colorlet{secondarycolor}{meta-blue} % Lighter (icon) color
+\colorlet{secondarycolor}{microsoft-blue} % Lighter (icon) color
 \colorlet{primarycolor}{black!33!secondarycolor} % Most company colors are light, so we darken it a bit to get the primary color
-\colorlet{bordercolor1}{primarycolor} % Top-left quadrant color
-\colorlet{bordercolor2}{secondarycolor} % Top-right quadrant color
-\colorlet{bordercolor3}{secondarycolor} % Bottom-left quadrant color
-\colorlet{bordercolor4}{primarycolor} % Bottom-right quadrant color
+\colorlet{bordercolor1}{microsoft-red} % Top-left quadrant color
+\colorlet{bordercolor2}{microsoft-green} % Top-right quadrant color
+\colorlet{bordercolor3}{microsoft-blue} % Bottom-left quadrant color
+\colorlet{bordercolor4}{microsoft-yellow} % Bottom-right quadrant color
 
 % VERTICAL Line spacing. Adjust to fit on one page
-\setstretch{0.98}
+\setstretch{1.15}
 
 % Section title formatting
 \titleformat{\section}
@@ -32,11 +32,11 @@
 \newcolumntype{C}{>{\centering\arraybackslash}X}
 
 % Then modify the header command
-\newcommand{\header}[1]{
+\newcommand{\header}[2]{
     \noindent
     \begin{tabularx}{\linewidth}{@{} C @{}}
         \Huge\textbf{Joseph Laurent Krueger} \\[5pt]
-        {\Large #1} \\[5pt]
+        #1 \ {\Large #2} \\[5pt]
         \href{mailto:josephfkrueger@protonmail.com}{{\color{primarycolor}\faEnvelope}\ josephkrueger@protonmail.com} \ $|$ 
         {{\color{primarycolor}\faMapPin}\ Seattle, WA} \ $|$ 
         {{\color{primarycolor}\faMobile}\ 360-763-3490} \\[3pt]
@@ -93,8 +93,7 @@
 %----------------------------------------------------------------------------------------
 %	HEADER
 %----------------------------------------------------------------------------------------
-% \headerwithlogo{\includegraphics[height=1em]{../logos/meta.png}}{XXX Company Engineer}
-\header{Software Engineer}
+\header{\includegraphics[height=1em]{../logos/microsoft.png}}{Microsoft Full Stack Engineer}
 \vspace{-10pt}
 
 %----------------------------------------------------------------------------------------
@@ -111,9 +110,21 @@
   \textit{Featured Coursework}: & \\ 
 \end{tabularx}
 \begin{itemize}[leftmargin=1.5em, nosep, noitemsep] % Adjust leftmargin for indentation
-  \item[] Algorithms, Computer Security, Data Structures, Distributed Systems (Paxos), Hardware/Software Interface, Natural Language Processing, Parallel Computing, Software Design \& Implementation, Systems Programming,Statistics, Accounting (with Excel), Mangemement, Marketing \\
+  \item[] 
+  Algorithms, 
+  Distributed Systems, 
+  Natural Language Processing, 
+  Statistics,
+  Computer Networks,
+  Distributed Systems,
+  Database Systems,
+  Data Structures and Algorithms,
+  Systems Programming,
+  Cybersecurity,
+  Linux/Unix Systems Administration,
+  Parallel and Concurrent Programming
 \end{itemize}
-\vspace{-30pt}
+\vspace{-20pt}
 
 %----------------------------------------------------------------------------------------
 %	EXPERIENCE
@@ -123,7 +134,7 @@
 \input{../modules/experiences/CleanPowerResearch_Intern.tex}
 \input{../modules/experiences/FullStack_Clearvote_CoFounder.tex}
 \input{../modules/experiences/MCGHealth_Intern.tex}
-\input{../modules/experiences/UW_TeachingAssistant.tex}
+% \input{../modules/experiences/UW_TeachingAssistant.tex}
 \vspace{-10pt}
 
 %----------------------------------------------------------------------------------------
@@ -138,12 +149,25 @@
 %	PROJECTS
 %----------------------------------------------------------------------------------------
 \section{\faFolderOpen{ }SIDE PROJECTS}
-\vspace{3pt}
+\vspace{4pt}
 \input{../modules/projects/FinancialPortfolioRebalancer.tex}
-\input{../modules/projects/DubHacks_IllustrAItor.tex}
-\input{../modules/projects/Eawoite.tex}
 
 %----------------------------------------------------------------------------------------
 %	END DOCUMENT
 %----------------------------------------------------------------------------------------
 \end{document}
+% 1. Effective Resume Ideas for This Job
+% Clean Power: maintainable and extensible code and adhered to coding standards.
+% Clean Power: debugging tools, logs to identify and resolve issues.
+% Clean power: contributions to quality assurance, testing, and automation in software development.
+% MCG: Automated Testing Framework: Built an automated testing pipeline using CI/CD tools to improve software reliability and reduce deployment risks.
+
+% Education: Human-Computer Interaction Programming
+
+
+% Clearvote: collaborative software development
+% Clearvote: integrate customer feedback
+% Clearvote: Show your ability to break down work items, estimate tasks, and manage dependencies.
+% Clearvote: experience with security
+% Clearvote: API Development: Designed and deployed RESTful APIs for a microservices architecture, ensuring high availability and performance.
+% Clearvote: Open Source Contribution: Contributed to an open-source project, focusing on code quality, maintainability, and collaboration with global developers. 

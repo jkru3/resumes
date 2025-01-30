@@ -25,8 +25,8 @@ The following is a job description for a position I am applying to:
 
 ```
 Please generate:
-1. generally what would be effective on a resume for this job
-2. string-array list of college courses that would be good to include on a resume
-3. string-array list of technical skills (languages, frameworks)
-4. string array list of conceptual skills (paradigms, types of work for this tech role)
-5. string-array list of types of projects to include in my projects section
+1. a few ideas for what would generally be effective on a resume for this job
+2. concise list of key college courses in my education section
+3. list of 15 MAX key technical skills (like languages, frameworks, etc. but do not categorize them) in my skills section
+4. list of 10 MAX key conceptual skills (like paradigms, types of work for this tech role, etc.) in my skills section 
+5. concise list of projects to highlight in my projects section
