@@ -19,7 +19,7 @@ Follow the form
 2. Measured by Y
 3. By doing Z
 
-## Claude/GPT/DeepSeek Prompt for generating ATS recommendations
+## Claude/GPT/DeepSeek Prompt for generating recommendations
 The following is a job description for a position I am applying to:
 ```md
 
@@ -30,3 +30,32 @@ Please generate:
 3. list of 15 MAX key technical skills (like languages, frameworks, etc. but do not categorize them) in my skills section
 4. list of 10 MAX key conceptual skills (like paradigms, types of work for this tech role, etc.) in my skills section 
 5. concise list of projects to highlight in my projects section
+
+## Useful resources
+- https://www.reddit.com/r/EngineeringResumes/wiki/index/?share_id=JPpfQ581Ep7v7Hk6Gl3pd&utm_content=1&utm_medium=ios_app&utm_name=ioscss&utm_source=share&utm_term=1#wiki_disclaimer.3A_your_submission_will_get_taken_down_if_you_do_not_read_this_wiki.
+- https://thetechresume.com/samples/ats-myths-busted
+
+## Crafting experiences section:
+Each bullet point should follow STAR, XYZ, or CAR
+STAR: Situation, Task, Action, and Results
+
+https://www.levels.fyi/blog/applying-star-method-resumes.html
+https://resumegenius.com/blog/resume-help/star-method-resume
+XYZ: Accomplished [X] as measured by [Y], by doing [Z]
+
+https://www.inc.com/bill-murphy-jr/google-recruiters-say-these-5-resume-tips-including-x-y-z-formula-will-improve-your-odds-of-getting-hired-at-google.html
+https://elevenrecruiting.com/create-an-effective-resume-xyz-resume-format/
+CAR: Challenge Action Result
+
+https://ca.indeed.com/career-advice/resumes-cover-letters/challenge-action-result-resume
+https://www.topresume.com/career-advice/how-to-get-more-results-with-a-car-resume
+
+If you're able to quantify your achievements/results, move the metrics towards the start of each bullet
+
+
+
+# TODO:
+- remove bolds
+- fix project hyphen
+- Classes in education section
+- GPA: order

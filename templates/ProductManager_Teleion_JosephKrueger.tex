@@ -10,7 +10,7 @@
 %----------------------------------------------------------------------------------------
 
 % Defined colors for this resume
-\colorlet{secondarycolor}{meta-blue} % Lighter (icon) color
+\colorlet{secondarycolor}{microsoft-green} % Lighter (icon) color
 \colorlet{primarycolor}{black!33!secondarycolor} % Most company colors are light, so we darken it a bit to get the primary color
 \colorlet{bordercolor1}{primarycolor} % Top-left quadrant color
 \colorlet{bordercolor2}{secondarycolor} % Top-right quadrant color
@@ -18,7 +18,7 @@
 \colorlet{bordercolor4}{primarycolor} % Bottom-right quadrant color
 
 % VERTICAL Line spacing. Adjust to fit on one page
-\setstretch{1.13}
+\setstretch{1.09}
 
 % Section title formatting
 \titleformat{\section}
@@ -32,11 +32,11 @@
 \newcolumntype{C}{>{\centering\arraybackslash}X}
 
 % Then modify the header command
-\newcommand{\header}[1]{
+\newcommand{\header}[2]{
     \noindent
     \begin{tabularx}{\linewidth}{@{} C @{}}
         \Huge\textbf{Joseph Laurent Krueger} \\[5pt]
-        {\Large #1} \\[5pt]
+        \raisebox{-0.3\height}{#1} \ {\Large #2} \\[5pt]
         \href{mailto:josephfkrueger@protonmail.com}{{\color{primarycolor}\faEnvelope}\ josephkrueger@protonmail.com} \ $|$ 
         \href{https://github.com/jkru3}{{\color{primarycolor}\faGithub}\ github.com/jkru3} \ $|$ 
         \href{https://joey-krueger.com}{{\color{primarycolor}\faGlobeAmericas}\ https://joey-krueger.com}
@@ -91,7 +91,8 @@
 %----------------------------------------------------------------------------------------
 %	HEADER
 %----------------------------------------------------------------------------------------
-\header{Software Engineer}
+\header{\includegraphics[height=3em]{../logos/teleion.png}}{Product Marketing Manager}
+% \header{Software Engineer}
 \vspace{-10pt}
 
 %----------------------------------------------------------------------------------------
@@ -101,7 +102,7 @@
 \vspace{4pt}
 \educationentry{University of Washington (Seattle campus)}{B.S. Computer Science, Minor in Business}{December 2024}{GPA: 3.70/4.0}
 \begin{itemize}[leftmargin=2em, nosep, noitemsep] % Adjust leftmargin for indentation
-  \item[] President and Co-founder of Clearvote, Algorithmic Trading Club, Salsa Club, UW Farm
+    \item[] President and Co-founder of Clearvote, Algorithmic Trading Club, Salsa Club, UW Farm
 \end{itemize}
 \vspace{-10pt}
 
@@ -131,7 +132,7 @@
 %---------------------------------------------------------------------------------------
 \section{\faDatabase{ }SKILLS}
 \vspace{4pt}
-\input{../modules/skills/default.tex}
+\input{../modules/skills/TechnicalProgramManager.tex}
 
 %----------------------------------------------------------------------------------------
 %	END DOCUMENT

@@ -38,17 +38,15 @@
         \Huge\textbf{Joseph Laurent Krueger} \\[5pt]
         #1 \ {\Large #2} \\[5pt]
         \href{mailto:josephfkrueger@protonmail.com}{{\color{primarycolor}\faEnvelope}\ josephkrueger@protonmail.com} \ $|$ 
-        {{\color{primarycolor}\faMapPin}\ Seattle, WA} \ $|$ 
-        {{\color{primarycolor}\faMobile}\ 360-763-3490} \\[3pt]
-        \href{https://linkedin.com/in/jkru3}{{\color{primarycolor}\faLinkedin}\ linkedin.com/in/jkru3} \ $|$ 
+        \href{https://github.com/jkru3}{{\color{primarycolor}\faGithub}\ github.com/jkru3} \ $|$ 
         \href{https://joey-krueger.com}{{\color{primarycolor}\faGlobeAmericas}\ https://joey-krueger.com}
     \end{tabularx}
 }
 
-\newcommand{\educationentry}[5]{
+\newcommand{\educationentry}[4]{
     \begin{tabularx}{\textwidth}{lX}
-        \textbf{#1} & \hfill {\textcolor{primarycolor}{#3}} $|$ #4 \\[0pt]
-        #2 & \hfill #5 \\[0pt]
+        \textbf{#1} & \hfill {\textcolor{primarycolor}{#3}} \\[0pt]
+        #2 & \hfill #4 \\[0pt]
     \end{tabularx}
 }
 
@@ -102,30 +100,11 @@
 %----------------------------------------------------------------------------------------
 \section{\faGraduationCap{ }EDUCATION}
 \vspace{4pt}
-\educationentry{University of Washington (Seattle campus)}{B.S. Computer Science, Minor in Business}{December 2024}{Seattle, WA, United States}{3.70/4.0 GPA}
-\begin{itemize}[leftmargin=1.5em, nosep, noitemsep] % Adjust leftmargin for indentation
-  \item[] President and Co-founder of Clearvote, Algorithmic Trading Club, Salsa Club, UW Farm
+\educationentry{University of Washington (Seattle campus)}{B.S. Computer Science, Minor in Business}{December 2024}{GPA: 3.70/4.0}
+\begin{itemize}[leftmargin=2em, nosep, noitemsep] % Adjust leftmargin for indentation
+    \item[] President and Co-founder of Clearvote, Algorithmic Trading Club, Salsa Club, UW Farm
 \end{itemize}
-% tabularx aligns with the left column of the table
-\begin{tabularx}{\textwidth}{lX}
-  \textit{Featured Coursework}: & \\ 
-\end{tabularx}
-\begin{itemize}[leftmargin=1.5em, nosep, noitemsep] % Adjust leftmargin for indentation
-  \item[] 
-  Algorithms, 
-  Distributed Systems, 
-  Natural Language Processing, 
-  Statistics,
-  Computer Networks,
-  Distributed Systems,
-  Database Systems,
-  Data Structures and Algorithms,
-  Systems Programming,
-  Cybersecurity,
-  Linux/Unix Systems Administration,
-  Parallel and Concurrent Programming
-\end{itemize}
-\vspace{-20pt}
+\vspace{-10pt}
 
 %----------------------------------------------------------------------------------------
 %	EXPERIENCE
@@ -135,23 +114,25 @@
 \input{../modules/experiences/CleanPowerResearch_Intern.tex}
 \input{../modules/experiences/FullStack_Clearvote_CoFounder.tex}
 \input{../modules/experiences/MCGHealth_Intern.tex}
-% \input{../modules/experiences/UW_TeachingAssistant.tex}
+\input{../modules/experiences/UW_TeachingAssistant.tex}
 \vspace{-10pt}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS
+%----------------------------------------------------------------------------------------
+\section{\faFolderOpen{ }PROJECTS}
+\vspace{3pt}
+\input{../modules/projects/FinancialPortfolioRebalancer.tex}
+\input{../modules/projects/DubHacks_IllustrAItor.tex}
+\input{../modules/projects/Eawoite.tex}
+\vspace{-20pt}
 
 %----------------------------------------------------------------------------------------
 %	SKILLS
 %---------------------------------------------------------------------------------------
 \section{\faDatabase{ }SKILLS}
 \vspace{4pt}
-\input{../modules/skills/ProductionEngineer.tex}
-\vspace{-20pt}
-
-%----------------------------------------------------------------------------------------
-%	PROJECTS
-%----------------------------------------------------------------------------------------
-\section{\faFolderOpen{ }SIDE PROJECTS}
-\vspace{4pt}
-\input{../modules/projects/FinancialPortfolioRebalancer.tex}
+\input{../modules/skills/default.tex}
 
 %----------------------------------------------------------------------------------------
 %	END DOCUMENT
