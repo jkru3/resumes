@@ -60,8 +60,8 @@ https://www.topresume.com/career-advice/how-to-get-more-results-with-a-car-resum
 If you're able to quantify your achievements/results, move the metrics towards the start of each bullet
 
 # TODO:
-- get resumes to build to the right dir
-- have resume naming work in .vscode
+- errors
+- colons
 
 - icon height
 - colons

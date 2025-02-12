@@ -7,3 +7,6 @@
 
 # for ios
 .DS_Store
+
+# We don't push the build files. we copy the built resume into it's own directory for gh-pages hosting
+build/

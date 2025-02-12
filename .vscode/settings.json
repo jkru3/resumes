@@ -2,29 +2,27 @@
     "latex-workshop.latex.outDir": "%DIR%/../../build",
     "latex-workshop.latex.recipes": [
         {
-            "name": "pdflatex",
-            "tools": [
-                "pdflatex"
-            ]
+            "name": "latexmk",
+            "tools": ["latexmk", "copy_pdf"]
         }
     ],
     "latex-workshop.latex.tools": [
         {
-            "name": "pdflatex",
-            "command": "pdflatex",
+            "name": "latexmk",
+            "command": "latexmk",
             "args": [
-                "-synctex=1",
-                "-interaction=nonstopmode",
-                "-file-line-error",
-                "-output-directory=%OUTDIR%",
-                "-jobname=custom_name",
+                "-pdf",
+                "-outdir=%OUTDIR%",
                 "%DOC%"
+            ]
+        },
+        {
+            "name": "copy_pdf",
+            "command": "python",
+            "args": [
+                "../../copy_pdf.py"
             ]
         }
     ],
-    "latex-workshop.latex.magic.args": [
-        "-output-directory=%OUTDIR%",
-        "-jobname=custom_name",
-        "%DOC%"
-    ]
+    "latex-workshop.latex.recipe.default": "latexmk"
 }
