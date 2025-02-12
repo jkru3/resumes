@@ -4,4 +4,9 @@
 *.fdb_latexmk
 *.out
 *.gz
+
+# for ios
 .DS_Store
+
+# for latexmk
+.latex.build/

@@ -1,0 +1,57 @@
+%----------------------------------------------------------------------------------------
+%	DOCUMENT SETUP
+%----------------------------------------------------------------------------------------
+\documentclass[10.5pt,letterpaper]{article}
+\usepackage{styling}
+\setstretch{1.12} % VERTICAL Line spacing. Adjust to fit on one page
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	HEADER
+%----------------------------------------------------------------------------------------
+\header{Software Engineer}{}
+\vspace{-10pt}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\section{\faGraduationCap{ }EDUCATION}
+\vspace{4pt}
+\educationentry
+\begin{itemize}[leftmargin=2em, nosep, noitemsep]
+    \item[] President and Co-founder of Clearvote, Algorithmic Trading Club, Salsa Club, UW Farm
+\end{itemize}
+\vspace{-10pt}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+\section{\faCode{ }EXPERIENCE}
+\vspace{4pt}
+\input{../../modules/experiences/CleanPowerResearch_Intern.tex}
+\input{../../modules/experiences/Clearvote_CoFounder/FullStack.tex}
+\input{../../modules/experiences/MCGHealth_Intern.tex}
+\input{../../modules/experiences/UW_TeachingAssistant.tex}
+\vspace{-10pt}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS
+%----------------------------------------------------------------------------------------
+\section{\faFolderOpen{ }PROJECTS}
+\vspace{3pt}
+\input{../../modules/projects/FinancialPortfolioRebalancer/FullStack.tex}
+\input{../../modules/projects/DubHacks_IllustrAItor.tex}
+\input{../../modules/projects/Eawoite.tex}
+\vspace{-20pt}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%---------------------------------------------------------------------------------------
+\section{\faDatabase{ }SKILLS}
+\vspace{4pt}
+\input{../../modules/skills/All_Skills.tex}
+
+%----------------------------------------------------------------------------------------
+%	END DOCUMENT
+%----------------------------------------------------------------------------------------
+\end{document}

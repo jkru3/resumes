@@ -1,0 +1,26 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND SETUP
+%----------------------------------------------------------------------------------------
+\ProvidesPackage{styling}
+\usepackage{../base-styling} % inherits all the styling (commands and colors) from base.sty
+
+%----------------------------------------------------------------------------------------
+%	DEFINE BASE COLORS
+%----------------------------------------------------------------------------------------
+\colorlet{secondarycolor}{microsoft-blue} % we set the company icon as the secondarycolor
+% since most company colors are light, so we darken it a bit to get the primarycolor
+\colorlet{primarycolor}{black!33!secondarycolor}
+
+%----------------------------------------------------------------------------------------
+%	SET ICON
+%----------------------------------------------------------------------------------------
+\newcommand{\iconheight}{3em} % change this to make the icon bigger
+\newcommand{\companyicon}{\includegraphics[height=\iconheight]{../../icons/teleion.png}}
+
+%----------------------------------------------------------------------------------------
+%	ADD BORDER COLORING
+%----------------------------------------------------------------------------------------
+\colorlet{bordercolor1}{microsoft-red} % top-left quadrant color
+\colorlet{bordercolor2}{microsoft-green} % top-right quadrant color
+\colorlet{bordercolor3}{microsoft-blue} % bottom-left quadrant color
+\colorlet{bordercolor4}{microsoft-yellow} % bottom-right quadrant color

@@ -1,0 +1,126 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND SETUP
+%----------------------------------------------------------------------------------------
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{base-styling}
+
+% required packages
+\usepackage{setspace}
+\usepackage[scale=0.9]{geometry}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{helvet}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{tikz} % for drawing the border
+\usepackage{fancyhdr} % for header/footer customization
+\usepackage{eso-pic} % for adding content to every page
+
+%----------------------------------------------------------------------------------------
+%	DEFINITIONS
+%----------------------------------------------------------------------------------------
+
+% these are just a few starter colors. You can add more as needed
+\definecolor{apple-grey}{HTML}{B0B0B0}
+\definecolor{helion-pink}{HTML}{CD2783}
+\definecolor{google_red}{HTML}{EA3A1D}
+\definecolor{microsoft-red}{HTML}{F54F24}
+\definecolor{adobe-red}{HTML}{EE1C25}
+\definecolor{data_bricks-red}{HTML}{FF3620}
+\definecolor{amazon-orange}{HTML}{F8971C}
+\definecolor{google_yellow}{HTML}{FDB900}
+\definecolor{microsoft-yellow}{HTML}{FFB903}
+\definecolor{google_green}{HTML}{23A146}
+\definecolor{microsoft-green}{HTML}{81B804}
+\definecolor{blue_origin-blue}{HTML}{0133DD}
+\definecolor{google_blue}{HTML}{347AF7}
+\definecolor{microsoft-blue}{HTML}{00A4EF}
+\definecolor{meta-blue}{HTML}{0266E4}
+\definecolor{meta-light_blue}{HTML}{0182FF}
+\definecolor{dark_blue}{HTML}{011627}
+
+%----------------------------------------------------------------------------------------
+%	CUSTOM COMMANDS
+%----------------------------------------------------------------------------------------
+
+% set sans-serif as default font
+\renewcommand\familydefault{\sfdefault}
+
+% customize itemize environment (notice the indentation here)
+\setlist[itemize]{nosep, leftmargin=2em}
+
+% section title formatting
+\titleformat{\section}
+  {\normalfont\large\bfseries\centering\color{primarycolor}}
+  {}
+  {0em} % spacing
+  {}
+  [\titlerule\vspace{-0.5\baselineskip}]
+
+% command for the header section
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+
+% make a header with an icon (if one is passed in)
+\newcommand{\header}[2]{
+  \noindent
+  \begin{tabularx}{\linewidth}{@{} C @{}}
+    \Huge\textbf{Joseph Laurent Krueger} \\[5pt]
+    #2 \ {\Large #1} \\[5pt]
+    \href{mailto:josephfkrueger@protonmail.com}{{\color{primarycolor}\faEnvelope}\ josephkrueger@protonmail.com} \ $|$ 
+    \href{https://github.com/jkru3}{{\color{primarycolor}\faGithub}\ github.com/jkru3} \ $|$ 
+    \href{https://joey-krueger.com}{{\color{primarycolor}\faGlobeAmericas}\ https://joey-krueger.com}
+  \end{tabularx}
+}
+
+% for education section
+\newcommand{\educationentry}[0]{
+  \begin{tabularx}{\textwidth}{lX}
+    \textbf{University of Washington (Seattle campus)} & \hfill {\textcolor{primarycolor}{December 2024}} \\[0pt]
+    B.S. Computer Science, Minor in Business & \hfill GPA: 3.70/4.0 \\[0pt]
+  \end{tabularx}
+}
+
+% for experiences and projects with links
+\newcommand{\linkentry}[5]{
+  \begin{tabularx}{\textwidth}{lX}
+    \href{#3}{\textbf{#1,} #2 \small{\faLink}} & \hfill {\textcolor{primarycolor}{#4}} $|$ #5 \\[0pt]
+  \end{tabularx}
+}
+
+% for experiences and projects without links
+\newcommand{\projectentry}[4]{
+  \begin{tabularx}{\textwidth}{lX}
+    \href{#3}{\textbf{#1,} #2 \small{\faLink}} & \hfill {\textcolor{primarycolor}{#4}} \\[0pt]
+  \end{tabularx}
+}
+
+% for skill categories
+\newcommand{\skillcategory}[2]{
+  \makebox[4cm][l]{\textbf{#1:}} #2\\
+}
+
+% remove page numbers
+\pagestyle{empty}
+
+% renders borders
+\AddToShipoutPictureBG{%
+    \begin{tikzpicture}[remember picture, overlay]
+        % top-left quadrant
+        \draw[bordercolor1, line width=4pt] (current page.north west) -- (current page.west);
+        \draw[bordercolor1, line width=4pt] (current page.north west) -- (current page.north);
+        % top-right quadrant
+        \draw[bordercolor2, line width=4pt] (current page.north east) -- (current page.east);
+        \draw[bordercolor2, line width=4pt] (current page.north east) -- (current page.north);
+        % bottom-left quadrant
+        \draw[bordercolor3, line width=4pt] (current page.south west) -- (current page.west);
+        \draw[bordercolor3, line width=4pt] (current page.south west) -- (current page.south);
+        % bottom-right quadrant
+        \draw[bordercolor4, line width=4pt] (current page.south east) -- (current page.east);
+        \draw[bordercolor4, line width=4pt] (current page.south east) -- (current page.south);
+    \end{tikzpicture}
+}

@@ -1,5 +1,12 @@
-# Resume Generator
-Have you ever wanted to apply with a tailored resume, but found it frusterating to put in the effort for it?
+# Mutable Resume Portfolio
+Have you ever wanted to apply with a tailored resume, but found the process of editing, updating, and managing different resumes, frusterating?
+
+Most resume generators focus on making one good resume. Anything more than that usually costs money in the form of a subscription. This is inconvenient for you as a job seeker because
+1. Your resume changes over time
+2. You need a way to manage multiple resumes to maximize their odds of standing out amoungst hundreds of applicants. i.e, you need a way *modularize* different skillsets to showcase for different positions
+3. Sometimes downloading a file isn't the most convenient form. A lot of networking is done informally via links. Having more control over your own data isn't just better for your wallet, but helps make it easy to self host your resumes and share them (which this app is designed for)
+4. You need something free to use. You are looking for a job, not trying to spend more money
+
 
 Spinning up new custom tailored resumes fast, free, and easy. With just a VScode extension, you can writeup all your experiences as LaTeX modules and then make as many templates as you want, drag and dropping modules like legos to fit the needs of the job you are applying for. The best part? It's easy to save, store, and build upon all the templates you use as you improve it.
 
@@ -55,7 +62,9 @@ If you're able to quantify your achievements/results, move the metrics towards t
 
 
 # TODO:
+- get resumes to build to the right dir
+- have resume naming work in .vscode
+- icon height
+- colons
 - remove bolds
 - fix project hyphen
-- Classes in education section
-- GPA: order
