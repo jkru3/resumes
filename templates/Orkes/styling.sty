@@ -1,0 +1,26 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND SETUP
+%----------------------------------------------------------------------------------------
+\ProvidesPackage{styling}
+\usepackage{../base-styling} % inherits all the styling (commands and colors) from base.sty
+
+%----------------------------------------------------------------------------------------
+%	DEFINE BASE COLORS
+%----------------------------------------------------------------------------------------
+\colorlet{secondarycolor}{helion-pink} % we set the company icon as the secondarycolor
+% since most company colors are light, so we darken it a bit to get the primarycolor
+\colorlet{primarycolor}{black!33!secondarycolor}
+
+%----------------------------------------------------------------------------------------
+%	SET ICON
+%----------------------------------------------------------------------------------------
+\newcommand{\iconheight}{1em} % change this to make the icon bigger
+\newcommand{\companyicon}{\includegraphics[height=\iconheight]{../../icons/orkes.jpeg}}
+
+%----------------------------------------------------------------------------------------
+%	ADD BORDER COLORING
+%----------------------------------------------------------------------------------------
+\colorlet{bordercolor1}{primarycolor} % top-left quadrant color
+\colorlet{bordercolor2}{secondarycolor} % top-right quadrant color
+\colorlet{bordercolor3}{secondarycolor} % bottom-left quadrant color
+\colorlet{bordercolor4}{primarycolor} % bottom-right quadrant color
