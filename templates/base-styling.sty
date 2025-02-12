@@ -1,3 +1,4 @@
+% base-styling.sty
 %----------------------------------------------------------------------------------------
 %	PACKAGES AND SETUP
 %----------------------------------------------------------------------------------------
@@ -124,3 +125,9 @@
         \draw[bordercolor4, line width=4pt] (current page.south east) -- (current page.south);
     \end{tikzpicture}
 }
+
+% define the sections
+\newcommand{\educationsection}{\section{\texorpdfstring{\faGraduationCap\ EDUCATION}{EDUCATION}}}
+\newcommand{\experiencesection}{\section{\texorpdfstring{\faCode\ EXPERIENCE}{EXPERIENCE}}}
+\newcommand{\projectsection}{\section{\texorpdfstring{\faFolderOpen\ PROJECTS}{PROJECTS}}}
+\newcommand{\skillsection}{\section{\texorpdfstring{\faDatabase\ SKILLS}{SKILLS}}}

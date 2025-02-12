@@ -1,28 +1,28 @@
 {
-    "latex-workshop.latex.outDir": "%DIR%/../../build",
-    "latex-workshop.latex.recipes": [
-        {
-            "name": "latexmk",
-            "tools": ["latexmk", "copy_pdf"]
-        }
-    ],
-    "latex-workshop.latex.tools": [
-        {
-            "name": "latexmk",
-            "command": "latexmk",
-            "args": [
-                "-pdf",
-                "-outdir=%OUTDIR%",
-                "%DOC%"
-            ]
-        },
-        {
-            "name": "copy_pdf",
-            "command": "python",
-            "args": [
-                "../../copy_pdf.py"
-            ]
-        }
-    ],
-    "latex-workshop.latex.recipe.default": "latexmk"
+  "latex-workshop.latex.outDir": "%DIR%/../../build/%RELATIVE_DIR%",
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "latexmk",
+      "tools": ["latexmk", "copy_pdf"]
+    }
+  ],
+  "latex-workshop.latex.tools": [
+    {
+      "name": "latexmk",
+      "command": "latexmk",
+      "args": [
+        "-pdf",
+        "-outdir=%OUTDIR%",
+        "%DOC%"
+      ]
+    },
+    {
+      "name": "copy_pdf",
+      "command": "python",
+      "args": [
+        "../../copy_pdf.py"
+      ]
+    }
+  ],
+  "latex-workshop.latex.recipe.default": "latexmk"
 }

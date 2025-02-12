@@ -60,10 +60,9 @@ https://www.topresume.com/career-advice/how-to-get-more-results-with-a-car-resum
 If you're able to quantify your achievements/results, move the metrics towards the start of each bullet
 
 # TODO:
-- errors
-- colons
+- fix the script to only process whatever is freshly built?
+- format all resumes (including ones for tomorrow)
 
-- icon height
-- colons
-- remove bolds
-- fix project hyphen
+- icon height should be vertically centered with role title
+- base-styling and hbox errors
+- color links chains with the primarycolor

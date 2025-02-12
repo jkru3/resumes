@@ -1,10 +1,10 @@
-% JosephKrueger_SWE_Resume.tex
+% SWE_JosephKrueger_Resume.pdf
 %----------------------------------------------------------------------------------------
 %	DOCUMENT SETUP
 %----------------------------------------------------------------------------------------
-\documentclass[10.5pt,letterpaper]{article}
+\documentclass[10.5pt,letterpaper]{extarticle}
 \usepackage{styling}
-\setstretch{1.12} % VERTICAL Line spacing. Adjust to fit on one page
+\setstretch{1.19} % VERTICAL Line spacing. Adjust to fit on one page
 \begin{document}
 
 %----------------------------------------------------------------------------------------
@@ -16,7 +16,7 @@
 %----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
-\section{\faGraduationCap{ }EDUCATION}
+\educationsection
 \vspace{4pt}
 \educationentry
 \begin{itemize}[leftmargin=2em, nosep, noitemsep]
@@ -27,18 +27,17 @@
 %----------------------------------------------------------------------------------------
 %	EXPERIENCE
 %----------------------------------------------------------------------------------------
-\section{\faCode{ }EXPERIENCE}
+\experiencesection
 \vspace{4pt}
 \input{../../modules/experiences/CleanPowerResearch_Intern.tex}
 \input{../../modules/experiences/Clearvote_CoFounder/FullStack.tex}
 \input{../../modules/experiences/MCGHealth_Intern.tex}
-\input{../../modules/experiences/UW_TeachingAssistant.tex}
 \vspace{-10pt}
 
 %----------------------------------------------------------------------------------------
 %	PROJECTS
 %----------------------------------------------------------------------------------------
-\section{\faFolderOpen{ }PROJECTS}
+\projectsection
 \vspace{3pt}
 \input{../../modules/projects/FinancialPortfolioRebalancer/FullStack.tex}
 \input{../../modules/projects/DubHacks_IllustrAItor.tex}
@@ -48,9 +47,9 @@
 %----------------------------------------------------------------------------------------
 %	SKILLS
 %---------------------------------------------------------------------------------------
-\section{\faDatabase{ }SKILLS}
+\skillsection
 \vspace{4pt}
-\input{../../modules/skills/(All_Skills).tex}
+\input{../../modules/skills/SoftwareEngineer.tex}
 
 %----------------------------------------------------------------------------------------
 %	END DOCUMENT
