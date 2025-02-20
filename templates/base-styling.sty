@@ -45,6 +45,7 @@
 \definecolor{meta-light_blue}{HTML}{0182FF}
 \definecolor{dark_blue}{HTML}{011627}
 
+
 %----------------------------------------------------------------------------------------
 %	CUSTOM COMMANDS
 %----------------------------------------------------------------------------------------
@@ -71,7 +72,9 @@
   \noindent
   \begin{tabularx}{\linewidth}{@{} C @{}}
     \Huge\textbf{Joseph Laurent Krueger} \\[5pt]
-    #2 \ {\Large #1} \\[5pt]
+    \begin{tabular}{@{}c@{\hspace{0.5em}}l@{}}
+      #2 & {\Large\raisebox{0.5\height}{#1}} \\
+    \end{tabular} \\[5pt]
     \href{mailto:josephfkrueger@protonmail.com}{{\color{primarycolor}\faEnvelope}\ josephkrueger@protonmail.com} \ $|$ 
     \href{https://github.com/jkru3}{{\color{primarycolor}\faGithub}\ github.com/jkru3} \ $|$ 
     \href{https://joey-krueger.com}{{\color{primarycolor}\faGlobeAmericas}\ https://joey-krueger.com}
