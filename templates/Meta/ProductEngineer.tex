@@ -4,13 +4,13 @@
 %----------------------------------------------------------------------------------------
 \documentclass[10.5pt,letterpaper]{extarticle}
 \usepackage{styling}
-\setstretch{1.11} % VERTICAL Line spacing. Adjust to fit on one page
+\setstretch{1.13} % VERTICAL Line spacing. Adjust to fit on one page
 \begin{document}
 
 %----------------------------------------------------------------------------------------
 %	HEADER
 %----------------------------------------------------------------------------------------
-\header{Meta Production Engineer}{\companyicon}
+\header{Meta Production Engineer}{\companyicon}{\iconsize}{\headerboxraise}
 \vspace{-10pt}
 
 %----------------------------------------------------------------------------------------
@@ -50,7 +50,14 @@
 %---------------------------------------------------------------------------------------
 \skillsection
 \vspace{4pt}
-\input{../../modules/skills/ProductionEngineer.tex}
+
+\input{../../modules/skills/general/Languages.tex}
+\input{../../modules/skills/general/Frameworks.tex}
+\input{../../modules/skills/frontend/FrontEndSkills.tex}
+\input{../../modules/skills/backend/SystemArchitecture.tex}
+\input{../../modules/skills/backend/DatabaseSystems.tex}
+\input{../../modules/skills/general/DevOps.tex}
+\input{../../modules/skills/general/Testing.tex}
 
 %----------------------------------------------------------------------------------------
 %	END DOCUMENT

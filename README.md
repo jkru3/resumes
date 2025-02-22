@@ -63,3 +63,8 @@ If you're able to quantify your achievements/results, move the metrics towards t
 - icon height should be vertically centered with role title
 - base-styling and hbox errors
 - color links chains with the primarycolor
+
+With this approach, it's worth making a more targeted approach to the companies you are going for. I like to prompt an LLM with my resume and the job description, requesting it to write a cover letter. it goes something like this:
+Here is my resume:
+Here is my job:
+Make me a narrative driven cover letter. Make me sound like a young upstart who they can see in themselves, and that whoever is reading this might want to take a chance on me.

@@ -68,13 +68,11 @@
 \newcolumntype{C}{>{\centering\arraybackslash}X}
 
 % make a header with an icon (if one is passed in)
-\newcommand{\header}[2]{
+\newcommand{\header}[4]{
   \noindent
   \begin{tabularx}{\linewidth}{@{} C @{}}
     \Huge\textbf{Joseph Laurent Krueger} \\[5pt]
-    \begin{tabular}{@{}c@{\hspace{0.5em}}l@{}}
-      #2 & {\Large\raisebox{0.5\height}{#1}} \\
-    \end{tabular} \\[5pt]
+    \includegraphics[height=#3]{#2} \ \raisebox{#4}{\Large #1} \\[5pt] 
     \href{mailto:josephfkrueger@protonmail.com}{{\color{primarycolor}\faEnvelope}\ josephkrueger@protonmail.com} \ $|$ 
     \href{https://github.com/jkru3}{{\color{primarycolor}\faGithub}\ github.com/jkru3} \ $|$ 
     \href{https://joey-krueger.com}{{\color{primarycolor}\faGlobeAmericas}\ https://joey-krueger.com}

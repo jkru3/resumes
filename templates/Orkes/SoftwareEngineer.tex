@@ -4,13 +4,13 @@
 %----------------------------------------------------------------------------------------
 \documentclass[10.5pt,letterpaper]{extarticle}
 \usepackage{styling}
-\setstretch{1.25} % VERTICAL Line spacing. Adjust to fit on one page
+\setstretch{1.21} % VERTICAL Line spacing. Adjust to fit on one page
 \begin{document}
 
 %----------------------------------------------------------------------------------------
 %	HEADER
 %----------------------------------------------------------------------------------------
-\header{Software Engineer}{\companyicon}
+\header{Software Engineer}{\companyicon}{\iconsize}{\headerboxraise}
 \vspace{-10pt}
 
 %----------------------------------------------------------------------------------------
@@ -42,14 +42,20 @@
 \input{../../modules/projects/FinancialPortfolioRebalancer/FullStack.tex}
 \input{../../modules/projects/DubHacks_IllustrAItor.tex}
 \input{../../modules/projects/Eawoite.tex}
-\vspace{-20pt}
+\vspace{-10pt}
 
 %----------------------------------------------------------------------------------------
 %	SKILLS
 %---------------------------------------------------------------------------------------
 \skillsection
 \vspace{4pt}
-\input{../../modules/skills/SoftwareEngineer.tex}
+\input{../../modules/skills/general/Languages.tex}
+\input{../../modules/skills/general/Frameworks.tex}
+\input{../../modules/skills/frontend/FrontEndSkills.tex}
+\input{../../modules/skills/backend/SystemArchitecture.tex}
+\input{../../modules/skills/backend/DatabaseSystems.tex}
+\input{../../modules/skills/general/DevOps.tex}
+\input{../../modules/skills/general/Testing.tex}
 
 %----------------------------------------------------------------------------------------
 %	END DOCUMENT

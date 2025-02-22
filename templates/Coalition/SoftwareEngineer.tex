@@ -4,13 +4,13 @@
 %----------------------------------------------------------------------------------------
 \documentclass[10.5pt,letterpaper]{extarticle}
 \usepackage{styling}
-\setstretch{1.24} % VERTICAL Line spacing. Adjust to fit on one page
+\setstretch{1.22} % VERTICAL Line spacing. Adjust to fit on one page
 \begin{document}
 
 %----------------------------------------------------------------------------------------
 %	HEADER
 %----------------------------------------------------------------------------------------
-\header{Software Engineer}{\companyicon}
+\header{Software Engineer}{\companyicon}{\iconsize}{\headerboxraise}
 \vspace{-10pt}
 
 %----------------------------------------------------------------------------------------
@@ -49,7 +49,14 @@
 %---------------------------------------------------------------------------------------
 \skillsection
 \vspace{4pt}
-\input{../../modules/skills/SoftwareEngineer.tex}
+
+\input{../../modules/skills/general/Languages.tex}
+\input{../../modules/skills/general/Frameworks.tex}
+\input{../../modules/skills/frontend/FrontEndSkills.tex}
+\input{../../modules/skills/backend/SystemArchitecture.tex}
+\input{../../modules/skills/backend/DatabaseSystems.tex}
+\input{../../modules/skills/general/DevOps.tex}
+\input{../../modules/skills/general/Testing.tex}
 
 %----------------------------------------------------------------------------------------
 %	END DOCUMENT
