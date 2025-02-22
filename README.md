@@ -59,12 +59,12 @@ https://www.topresume.com/career-advice/how-to-get-more-results-with-a-car-resum
 
 If you're able to quantify your achievements/results, move the metrics towards the start of each bullet
 
-# TODO:
-- icon height should be vertically centered with role title
-- base-styling and hbox errors
-- color links chains with the primarycolor
+## Cover letters
+Cover letters aren't a supported feature, but you want them since you are already invseting time into a targeted approach. 
 
-With this approach, it's worth making a more targeted approach to the companies you are going for. I like to prompt an LLM with my resume and the job description, requesting it to write a cover letter. it goes something like this:
+I like to prompt an LLM with my resume and the job description, requesting it to write a cover letter. it goes something like this:
+```
 Here is my resume:
 Here is my job:
 Make me a narrative driven cover letter. Make me sound like a young upstart who they can see in themselves, and that whoever is reading this might want to take a chance on me.
+```
