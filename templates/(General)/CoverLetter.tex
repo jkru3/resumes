@@ -1,0 +1,37 @@
+% CoverLetter.pdf
+% We don't always need a cover letter, but if you have a guarenteed reference, it doesn't hurt
+%----------------------------------------------------------------------------------------
+%	DOCUMENT SETUP
+%----------------------------------------------------------------------------------------
+\newcommand{\companyname}{Qualtrics}
+\newcommand{\coverlink}{../Qualtrics/cover.tex}
+
+%----------------------------------------------------------------------------------------
+%	BEGIN DOCUMENT
+%----------------------------------------------------------------------------------------
+\documentclass[11pt,letterpaper]{letter}
+\usepackage[margin=1.5in]{geometry} % Adjust margins
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault}
+\begin{document}
+\address{Joseph Laurent Krueger \\ Seattle, WA \\ Email: josephfkrueger@protonmail.com \\ Phone: (360) 763-3490 \\ \today}
+\date{} % no date, we put this above
+\begin{letter}{}
+\opening{Dear {\companyname} Hiring Team,}
+\input{\coverlink}\\
+\closing{Sincerely, \\ Joey Krueger}
+\end{letter}
+
+%----------------------------------------------------------------------------------------
+%	END DOCUMENT
+%----------------------------------------------------------------------------------------
+\end{document}
+
+
+
+
+
+
+
+
+
