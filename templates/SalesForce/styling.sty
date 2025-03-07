@@ -1,0 +1,28 @@
+% styling_extension.sty
+%----------------------------------------------------------------------------------------
+% PACKAGES AND SETUP
+%----------------------------------------------------------------------------------------
+\ProvidesPackage{styling}
+\usepackage{../base-styling} % inherits all the styling (commands and colors) from base.sty
+
+%----------------------------------------------------------------------------------------
+%	DEFINE BASE COLORS
+%----------------------------------------------------------------------------------------
+\colorlet{secondarycolor}{salesforce-blue} % we set the company icon as the secondarycolor
+% since most company colors are light, so we darken it a bit to get the primarycolor
+\colorlet{primarycolor}{black!33!secondarycolor}
+
+%----------------------------------------------------------------------------------------
+%	SET HEADER
+%----------------------------------------------------------------------------------------
+\newcommand{\companyicon}{../../icons/salesforce.png} % path to the company icon
+\newcommand{\iconsize}{2.5em} % change this to make the icon bigger
+\newcommand{\headerboxraise}{0.75em} % change this to move the header up or down
+
+%----------------------------------------------------------------------------------------
+%	ADD BORDER COLORING
+%----------------------------------------------------------------------------------------
+\colorlet{bordercolor1}{primarycolor} % top-left quadrant color
+\colorlet{bordercolor2}{secondarycolor} % top-right quadrant color
+\colorlet{bordercolor3}{secondarycolor} % bottom-left quadrant color
+\colorlet{bordercolor4}{primarycolor} % bottom-right quadrant color
