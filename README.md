@@ -63,10 +63,10 @@ If you're able to quantify your achievements/results, move the metrics towards t
 Cover letters aren't a supported feature, but you want them since you are already invseting time into a targeted approach. 
 
 I like to prompt an LLM with my resume and the job description, requesting it to write a cover letter. it goes something like this:
-```
+
 Here is my resume:
 Here is my job:
-Make me a narrative driven cover letter. Make me sound like a young upstart who they can see in themselves, and that whoever is reading this might want to take a chance on me.
+Make me a narrative driven cover letter. I want to show the recruiter I'm taking my time and looking for the right place to start my career. I have to want something more than just working there: this is what I am about, this is what you represent, and this is why it's a good match for me
 ```
 
 11150 NE Hawkeye Pl, Kingston, WA 98346
