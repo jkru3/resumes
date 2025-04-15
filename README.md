@@ -67,6 +67,21 @@ I like to prompt an LLM with my resume and the job description, requesting it to
 Here is my resume:
 Here is my job:
 Make me a narrative driven cover letter. I want to show the recruiter I'm taking my time and looking for the right place to start my career. I have to want something more than just working there: this is what I am about, this is what you represent, and this is why it's a good match for me
-```
 
 11150 NE Hawkeye Pl, Kingston, WA 98346
+remember the form: accomplished x as measured by y by doing z
+
+TODO:
+where can i learn/add this?
+Hibernate ORM
+Maven or Gradle
+Database experience: Postgres, MySQL, Oracle DB, and DynamoDB
+Front-end: JavaScript, jQuery, React, and HTML
+JSON for configuration repositories
+Testing tools: TestNG, Cucumber, JUnit, Selenium, Mockito, JUnit5
+CI/CD: Jenkins, Spinnaker, Docker, Kubernetes
+Caching: Redis Cache and Elastic Cache
+AWS services: EC2, ECS, ECS Fargate, EKS, SQS, SNS, Lambda, EventBridge, S3, Aurora RDS, Route 53, Load Balancer, Auto Scaling, CloudWatch, VPC, CloudFormation, IAM, and Security Groups
+Java, Scala, Python, and Shell scripting
+Apache Kafka for real-time data streaming
+Apache Spark for data processing
