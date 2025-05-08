@@ -18,7 +18,7 @@
     },
     {
       "name": "copy_pdf",
-      "command": "python",
+      "command": "/Users/jkru3/.pyenv/shims/python",
       "args": [
         "../../copy_pdf.py"
       ]
