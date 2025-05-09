@@ -1,0 +1,29 @@
+% templates/TRM/styling.sty
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND SETUP
+%----------------------------------------------------------------------------------------
+
+\ProvidesPackage{styling}
+\usepackage{../base-styling} % inherits all the styling (commands and colors) from base.sty
+
+%----------------------------------------------------------------------------------------
+%	DEFINE BASE COLORS
+%----------------------------------------------------------------------------------------
+\colorlet{secondarycolor}{black} % we set the company icon as the secondarycolor
+% since most company colors are light, so we darken it a bit to get the primarycolor
+\colorlet{primarycolor}{black!33!secondarycolor}
+
+%----------------------------------------------------------------------------------------
+%	SET HEADER
+%----------------------------------------------------------------------------------------
+\newcommand{\companyicon}{../../assets/icons/anduril.jpeg} % path to the company icon
+\newcommand{\iconsize}{2em} % change this to make the icon bigger
+\newcommand{\headerboxraise}{0.5em} % change this to move the header up or down
+
+%----------------------------------------------------------------------------------------
+%	ADD BORDER COLORING
+%----------------------------------------------------------------------------------------
+\colorlet{bordercolor1}{primarycolor} % Top-left quadrant color
+\colorlet{bordercolor2}{secondarycolor} % Top-right quadrant color
+\colorlet{bordercolor3}{secondarycolor} % Bottom-left quadrant color
+\colorlet{bordercolor4}{primarycolor} % Bottom-right quadrant color
