@@ -1,6 +1,6 @@
 % AmazonSDE_JosephKrueger_Resume.pdf
 %----------------------------------------------------------------------------------------
-%	DOCUMENT SETUP
+% DOCUMENT SETUP
 %----------------------------------------------------------------------------------------
 \documentclass[10.5pt,letterpaper]{extarticle}
 \usepackage{styling}
@@ -8,13 +8,13 @@
 \begin{document}
 
 %----------------------------------------------------------------------------------------
-%	HEADER
+% HEADER
 %----------------------------------------------------------------------------------------
 \header{Software Engineer}{\companyicon}{\iconsize}{\headerboxraise}
 \vspace{-10pt}
 
 %----------------------------------------------------------------------------------------
-%	EDUCATION
+% EDUCATION
 %----------------------------------------------------------------------------------------
 \educationsection
 \vspace{4pt}
@@ -25,7 +25,7 @@
 \vspace{-10pt}
 
 %----------------------------------------------------------------------------------------
-%	EXPERIENCE
+% EXPERIENCE
 %----------------------------------------------------------------------------------------
 \experiencesection
 \vspace{4pt}
@@ -36,50 +36,57 @@
 \vspace{-10pt}
 
 %----------------------------------------------------------------------------------------
-%	PROJECTS
+% PROJECTS
 %----------------------------------------------------------------------------------------
 \projectsection
 \vspace{3pt}
-\input{../../modules/projects/FinancialPortfolioRebalancer/FullStack.tex}
+\input{../../modules/projects/FinancialPortfolioRebalancer/Complete.tex}
 % \input{../../modules/projects/Dempsey_Autodubs.tex}
 \input{../../modules/projects/DubHacks_IllustrAItor.tex}
 % \input{../../modules/projects/Eawoite.tex}
+% \input{../../modules/projects/ProtoQA.tex}
 \vspace{-10pt}
 
 %----------------------------------------------------------------------------------------
-%	SKILLS
+% SKILLS
+% - always show languages and frameworks
+% - (almost) always show my specialization: Cloud Infrastructure and DevOps
+% - include one catered category (system architecture, security, etc.)
+% - bold all skills relevant to the particular role
 %---------------------------------------------------------------------------------------
 \skillsection
 \vspace{4pt}
-% recruiters care about languages and frameworks
-\input{../../modules/skills/general/Languages.tex}
-\input{../../modules/skills/general/Frameworks.tex}
-% these are targeted skills that are relevant to the work I'd like to do
-\input{../../modules/skills/target/DevOps.tex}
-\input{../../modules/skills/target/CloudInfrastructure.tex}
-% more general skills, catered to the job I'm applying to
- \input{../../modules/skills/general/SystemArchitecture.tex}
+\skillcategory{Languages}{Java, TypeScript, Python, C\#, Dart, C++, Shell scripting (PowerShell, bash)}
+\skillcategory{Frameworks}{Node.js, .NET, Flask, React, Next.js, Vue, AngularJS, Flutter (cross-platform mobile development), }
+\skillcategory{DevOps}{CI/CD (Azure DevOps, GitHub Actions), SRE practices (SLIs/SLOs, error budgets), IaC (AWS SDK)} %  IaC (Terraform)
+\skillcategory{Cloud}{AWS (RDB, DynamoDB, EC2, S3, API Gateway), Azure, GCP, Serverless computing (Lambda)}
+\skillcategory{Infrastructure}{Kubernetes, Docker, Linux admin, Distributed systems (CAP theorem, consensus protocols)} % GitOps (ArgoCD/Flux), monitoring with Prometheus/Grafana
 
-% \input{../../modules/skills/target/DevOps.tex}
-% \input{../../modules/skills/target/CloudInfrastructure.tex}
-% \input{../../modules/skills/target/InfrastructureAutomation.tex}
-% \input{../../modules/skills/target/Security.tex}
-% \input{../../modules/skills/target/Monitoring.tex}
-% \input{../../modules/skills/general/Languages.tex}
-% \input{../../modules/skills/general/SystemArchitecture.tex}
-% \input{../../modules/skills/general/Frameworks.tex}
-% \input{../../modules/skills/general/DevTools.tex}
-% \input{../../modules/skills/general/WebArchitecture.tex}
-% \input{../../modules/skills/general/Testing.tex}
-% \input{../../modules/skills/general/ModelDevelopment.tex}
-% \input{../../modules/skills/general/NLP.tex}
-% \input{../../modules/skills/general/DataScience.tex}
-% \input{../../modules/skills/general/DatabaseSystems.tex}
-% \input{../../modules/skills/general/DataVisualization.tex}
-% \input{../../modules/skills/general/MobileDevelopment.tex}
-% \input{../../modules/skills/general/WebTech.tex}
-% \input{../../modules/skills/general/ProjectManagement.tex}
-% \input{../../modules/skills/general/BusinessStrategy.tex}
+% general skills
+% \skillcategory{Business \& Strategy}{User Research, Digital Marketing (Meta Ads Manager, influencer outreach)}
+% \skillcategory{Database Systems}{ER Modeling, Relational Databases (SQLite, MySQL), NoSQL (DynamoDB)}
+% \skillcategory{Data Science}{Web Scraping (Puppeteer, Selenium), NumPy, Pandas, Matplotlib, Desmos}
+% \skillcategory{Data Visualization}{D3, Vega, Tableau, Highcharts, Geospacial mapping, Network graphing}
+% \skillcategory{Dev Tools}{Chrome DevTools, Build Systems (Make, CMake, Gradle), Source control (Git), GDB}
+% \skillcategory{Frameworks}{Flutter (iOS and Android development), .NET, Flask, React, Next.js, Vue, AngularJS}
+% \skillcategory{Languages}{Java, TypeScript, Python, C\#, Dart, C++, C, Go}
+% \skillcategory{Mobile Development}{Cross-platform (Flutter, React Native), SEO, Responsive Design, Tailwind CSS, Material UI}
+% \skillcategory{Model Development}{PyTorch, TensorFlow, Supervised Machine Learning, Hyperparameter optimization}
+% \skillcategory{NLP}{Auto-regressive and Sequence-to-sequence transformers, Large Language Models (LLMs)}
+% \skillcategory{Project Management}{Software Development Lifecycle, Agile Methodology (Scrum with Confluence, Jira, GitHub, GitLab)}
+% \skillcategory{System Architecture}{API/Service development, x86-64/ARM, Distributed systems, Design patterns \& SOLID principles}
+% \skillcategory{Testing}{JUnit, Jest, Selenium, Test-Driven Development}
+% \skillcategory{Web Archtecture}{Web Protocols (HTTPS, REST), Architectural Patterns (Monolithic, Microservices, Serverless)}
+% \skillcategory{Web Technologies}{REST APIs, HTML, CSS, ES6 JS}
+% target skills
+% \skillcategory{Cloud Infrastructure}{Docker, Kubernetes, AWS (RDB, Lambda, DynamoDB, EC2, S3, Amplify), Azure, IaC (AWS CDK)}
+% \skillcategory{DevOps}{CI/CD pipelines (Azure DevOps), Shell scripting (PowerShell, Bash), Linux/Unix administration}
+% \skillcategory{Infrastructure as Code}{Terraform, CloudFormation, AWS CDK}
+% \skillcategory{Monitoring}{AWS CloudWatch, Prometheus, Grafana}
+% \skillcategory{Security}{OWASP top 10 vulnerabilities (XSS, SQL Injection), Secure API, IAM resource management}
+% other skills
+% \skillcategory{API development}{REST APIs, Flask, Authentication (OAuth2), API Gateway, Rate limiting, Monitoring (CloudWatch)}
+% \skillcategory{MLOps}{MLflow, Model deployment pipelines, Model versioning, Weights & Biases, Model serving}
 
 %----------------------------------------------------------------------------------------
 %	END DOCUMENT
